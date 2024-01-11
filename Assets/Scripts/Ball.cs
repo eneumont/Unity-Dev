@@ -7,14 +7,6 @@ public class Ball : MonoBehaviour {
     [SerializeField][Range(1, 20)][Tooltip("Force to move object")]  float force;
 
     [SerializeField] Rigidbody rb;
-    
-    void Awake() {
-        
-    }
-
-    void Start() {
-        //rb = GetComponent<Rigidbody>();
-    }
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {

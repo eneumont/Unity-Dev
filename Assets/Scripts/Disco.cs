@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Disco : MonoBehaviour {
     public Light discolight;
- 
-    void Start() {
-        
-    }
 
     void Update() {
         discolight.color = Random.ColorHSV();
