@@ -17,7 +17,7 @@ public class Wave : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        time = Time.deltaTime * rate;
+        time += Time.deltaTime * rate;
         float wave = Mathf.Sin(time) * amplitude;
         transform.position = origin + (Vector3.up * wave);
     }

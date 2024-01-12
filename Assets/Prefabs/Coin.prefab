@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4fe94edae38f7440acd21e6efcee4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 0.25
-  amplitude: 3
+  rate: 3
+  amplitude: 0.25
 --- !u!114 &-4730821123114643456
 MonoBehaviour:
   m_ObjectHideFlags: 0
