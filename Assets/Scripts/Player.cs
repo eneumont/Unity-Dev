@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
     [Header("Events")]
     [SerializeField] IntEvent scoreEvent = default;
     [SerializeField] VoidEvent gameStartEvent = default;
+    [SerializeField] VoidEvent playerDeadEvent = default;
     private int score = 0;
     public int Score { 
         get { return score; } 
@@ -24,7 +25,7 @@ public class Player : MonoBehaviour {
     }
 
     void Start () { 
-        health.value = 5.5f; 
+
     }
 
     public void AddPoints(int points) {
@@ -33,5 +34,16 @@ public class Player : MonoBehaviour {
 
     void onStartGame() { 
         characterController.enabled = true;
+    }
+
+    public void onRespawn(GameObject respawn) { 
+        transform.position = respawn.transform.position;
+        transform.rotation = respawn.transform.rotation;
+        characterController.Reset();
+    }
+
+    public void Damage(float damage) { 
+        health.value -= damage;
+        if (health.value <= 0) playerDeadEvent.RaiseEvent();
     }
 }
