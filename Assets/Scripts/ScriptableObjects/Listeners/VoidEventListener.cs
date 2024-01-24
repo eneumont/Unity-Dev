@@ -7,15 +7,15 @@ public class VoidEventListener : MonoBehaviour {
     [SerializeField] private VoidEvent _event = default;
 
     public UnityEvent listener;
-    private void OnEnable() {
+    void OnEnable() {
         _event?.Subscribe(Respond);
     }
 
-    private void OnDisable() {
+    void OnDisable() {
         _event?.unSubscribe(Respond);
     }
 
-    private void Respond() {
+    void Respond() {
         listener?.Invoke();
     }
 }

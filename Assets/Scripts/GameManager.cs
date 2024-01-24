@@ -38,13 +38,11 @@ public class GameManager : Singleton<GameManager> {
 		set { timer = value; timerUI.text = string.Format("{0:F1}", timer); }
 	}
 
-    private void OnEnable()
-    {
+    void OnEnable() {
         
     }
 
-    void OnDisable()
-    {
+    void OnDisable() {
         //scoreEvent.unSubscribe(OnAddPoints);
     }
 

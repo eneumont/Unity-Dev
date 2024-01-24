@@ -9,14 +9,12 @@ public class Wave : MonoBehaviour {
     float time = 0;
     Vector3 origin = Vector3.zero;
 
-    void Start()
-    {
+    void Start() {
         origin = transform.position;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         time += Time.deltaTime * rate;
         float wave = Mathf.Sin(time) * amplitude;
         transform.position = origin + (Vector3.up * wave);

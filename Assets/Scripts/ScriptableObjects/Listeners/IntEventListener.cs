@@ -7,18 +7,15 @@ public class IntEventListener : MonoBehaviour {
     [SerializeField] private IntEvent _event = default;
 
     public UnityEvent<int> listener;
-    private void OnEnable()
-    {
+    void OnEnable() {
         _event?.Subscribe(Respond);
     }
 
-    private void OnDisable()
-    {
+    void OnDisable() {
         _event?.unSubscribe(Respond);
     }
 
-    private void Respond(int value)
-    {
+    void Respond(int value) {
         listener?.Invoke(value);
     }
 }

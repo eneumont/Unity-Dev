@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4110c043307296488c7c3788881c6b7, type: 3}
-  m_Name: GameStartEvent
+  m_Name: GameWinEvent
   m_EditorClassIdentifier: 
-  description: Event when game starts
+  description: Event when player wins

@@ -6,7 +6,9 @@ using TMPro;
 public class Player : MonoBehaviour {
     [SerializeField] TMP_Text scoreText;
     [SerializeField] FloatVariable health;
+    [SerializeField] IntVariable lives;
     [SerializeField] PhysicCharacterController characterController;
+    [SerializeField] GameObject respawn;
     [Header("Events")]
     [SerializeField] IntEvent scoreEvent = default;
     [SerializeField] VoidEvent gameStartEvent = default;
@@ -21,7 +23,7 @@ public class Player : MonoBehaviour {
     }
 
     void OnEnable() {
-        gameStartEvent.Subscribe(onStartGame);    
+        gameStartEvent.Subscribe(onStartGame);
     }
 
     void Start () { 
@@ -44,6 +46,11 @@ public class Player : MonoBehaviour {
 
     public void Damage(float damage) { 
         health.value -= damage;
-        if (health.value <= 0) playerDeadEvent.RaiseEvent();
+        if (health.value <= 0) {
+            lives.value--;
+            health.value = 100;
+            onRespawn(respawn);
+		}
+        if (lives.value == 0) playerDeadEvent.RaiseEvent();
     }
 }

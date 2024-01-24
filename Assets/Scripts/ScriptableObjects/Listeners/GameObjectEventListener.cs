@@ -7,18 +7,15 @@ public class GameObjectEventListener : MonoBehaviour {
     [SerializeField] private GameObjectEvent _event = default;
 
     public UnityEvent<GameObject> listener;
-    private void OnEnable()
-    {
+    void OnEnable() {
         _event?.Subscribe(Respond);
     }
 
-    private void OnDisable()
-    {
+    void OnDisable() {
         _event?.unSubscribe(Respond);
     }
 
-    private void Respond(GameObject value)
-    {
+    void Respond(GameObject value) {
         listener?.Invoke(value);
     }
 }
