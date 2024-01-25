@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     [SerializeField] GameObject pickupPrefab = null;
+    [SerializeField] string pickupType = null;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -13,7 +14,17 @@ public class Pickup : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.TryGetComponent(out Player player)) {
-            player.AddPoints(10);
+            switch (pickupType) {
+                case "coin":
+					player.AddPoints(10);
+					break;
+                case "health":
+                    player.Healing(33);
+                    break;
+                case "time":
+                    break;
+            }
+            
         }
         
         Instantiate(pickupPrefab, transform.position, Quaternion.identity);

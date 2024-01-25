@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
     [SerializeField] TMP_Text scoreText;
-    [SerializeField] FloatVariable health;
-    [SerializeField] IntVariable lives;
+    [SerializeField] Slider healthSlider;
+    [SerializeField] TMP_Text livesText;
     [SerializeField] PhysicCharacterController characterController;
     [SerializeField] GameObject respawn;
     [Header("Events")]
     [SerializeField] IntEvent scoreEvent = default;
+    [SerializeField] IntEvent livesEvent = default;
+    [SerializeField] FloatEvent healthEvent = default;
     [SerializeField] VoidEvent gameStartEvent = default;
     [SerializeField] VoidEvent playerDeadEvent = default;
     private int score = 0;
@@ -22,7 +25,25 @@ public class Player : MonoBehaviour {
         } 
     }
 
-    void OnEnable() {
+	[SerializeField] float health = 100;
+	public float Health {
+		get { return health; }
+		set { health = value;
+			healthSlider.value = health; //might need to divide by 100.0f
+			healthEvent.RaiseEvent(health);
+		}
+	}
+
+	private int lives = 3;
+	public int Lives {
+		get { return lives; }
+		set { lives = value;
+			livesText.text = "Lives: " + lives.ToString();
+			livesEvent.RaiseEvent(lives);
+		}
+	}
+
+	void OnEnable() {
         gameStartEvent.Subscribe(onStartGame);
     }
 
@@ -30,13 +51,29 @@ public class Player : MonoBehaviour {
 
     }
 
-    public void AddPoints(int points) {
+	public void AddPoints(int points) {
         Score += points;
+    }
+
+    public void Healing(float heal) { 
+        Health += heal;
+    }
+
+    public void Die() {
+        if (Lives == 0) {
+            playerDeadEvent.RaiseEvent();
+        } else {
+			Lives--;
+			Health = health;
+			onRespawn(respawn);
+		}
     }
 
     void onStartGame() { 
         characterController.enabled = true;
-    }
+		Lives = lives;
+		Health = health;
+	}
 
     public void onRespawn(GameObject respawn) { 
         transform.position = respawn.transform.position;
@@ -45,12 +82,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Damage(float damage) { 
-        health.value -= damage;
-        if (health.value <= 0) {
-            lives.value--;
-            health.value = 100;
-            onRespawn(respawn);
-		}
-        if (lives.value == 0) playerDeadEvent.RaiseEvent();
+        Health -= damage;
+        if (Health <= 0) Die();
     }
 }

@@ -8,15 +8,13 @@ public class PhysicsEffector : MonoBehaviour {
 	[SerializeField] bool oneTime = true;
 
 	private void OnTriggerEnter(Collider other) {
-		if (oneTime && other.gameObject.TryGetComponent<Rigidbody>(out Rigidbody rb))
-		{
+		if (oneTime && other.gameObject.TryGetComponent<Rigidbody>(out Rigidbody rb)) {
 			rb.AddForce(direction.up * force, ForceMode.VelocityChange);
 		}
 	}
 
 	private void OnTriggerStay(Collider other) {
-		if (other.gameObject.TryGetComponent<Rigidbody>(out Rigidbody rb))
-		{
+		if (other.gameObject.TryGetComponent<Rigidbody>(out Rigidbody rb)) {
 			rb.AddForce(direction.up * force);
 		}
 	}

@@ -6,15 +6,10 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager> {
     [SerializeField] GameObject titleUI;
-    [SerializeField] TMP_Text livesUI;
     [SerializeField] TMP_Text timerUI;
-    [SerializeField] Slider healthUI;
-
-    [SerializeField] FloatVariable health;
     [SerializeField] GameObject respawn;
 
     [Header("Events")]
-    //[SerializeField] IntEvent scoreEvent;
     [SerializeField] VoidEvent gameStartEvent;
     [SerializeField] GameObjectEvent respawnEvent;
     public enum State { 
@@ -26,12 +21,6 @@ public class GameManager : Singleton<GameManager> {
 
     public State state = State.TITLE;
     public float timer = 0;
-    public int lives = 0;
-
-    public int Lives {  
-        get { return lives; } 
-        set { lives = value; livesUI.text = "Lives: " + lives.ToString(); } 
-    }
 
 	public float Timer {
 		get { return timer; }
@@ -43,11 +32,11 @@ public class GameManager : Singleton<GameManager> {
     }
 
     void OnDisable() {
-        //scoreEvent.unSubscribe(OnAddPoints);
+        
     }
 
     void Start() {
-        //scoreEvent.Subscribe(OnAddPoints);
+        
     }
 
     void Update() {
@@ -60,8 +49,6 @@ public class GameManager : Singleton<GameManager> {
 			case State.START_GAME:
                 titleUI.SetActive(false);
                 Timer = 60;
-                Lives = 3;
-                health.value = 100;
 				Cursor.lockState = CursorLockMode.Locked;
 				Cursor.visible = false;
                 gameStartEvent.RaiseEvent();
@@ -77,8 +64,6 @@ public class GameManager : Singleton<GameManager> {
             default:
                 break;
 		}
-
-        healthUI.value = health.value / 100.0f;
 	}
 
     public void onStartGame() { 
