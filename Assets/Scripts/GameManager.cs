@@ -16,7 +16,8 @@ public class GameManager : Singleton<GameManager> {
         TITLE,
         START_GAME,
         PLAY_GAME,
-        GAMEOVER
+        GAMEOVER,
+        GAME_WON
     }
 
     public State state = State.TITLE;
@@ -61,6 +62,8 @@ public class GameManager : Singleton<GameManager> {
 				break;
 			case State.GAMEOVER:
 				break;
+            case State.GAME_WON:
+                break;
             default:
                 break;
 		}

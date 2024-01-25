@@ -8,6 +8,7 @@ public class Player : MonoBehaviour {
     [SerializeField] TMP_Text scoreText;
     [SerializeField] Slider healthSlider;
     [SerializeField] TMP_Text livesText;
+    [SerializeField] TMP_Text timerText;
     [SerializeField] PhysicCharacterController characterController;
     [SerializeField] GameObject respawn;
     [Header("Events")]
@@ -29,7 +30,7 @@ public class Player : MonoBehaviour {
 	public float Health {
 		get { return health; }
 		set { health = value;
-			healthSlider.value = health; //might need to divide by 100.0f
+			healthSlider.value = health / 100.0f; //might need to divide by 100.0f
 			healthEvent.RaiseEvent(health);
 		}
 	}
@@ -43,6 +44,12 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+    private int timer = 0;
+    public int Timer { 
+        get { return timer; }
+        set { timer = value; timerText.text = string.Format("{0:F1}", timer); }
+    }
+
 	void OnEnable() {
         gameStartEvent.Subscribe(onStartGame);
     }
@@ -50,6 +57,10 @@ public class Player : MonoBehaviour {
     void Start () { 
 
     }
+
+	void Update() {
+
+	}
 
 	public void AddPoints(int points) {
         Score += points;
@@ -64,15 +75,16 @@ public class Player : MonoBehaviour {
             playerDeadEvent.RaiseEvent();
         } else {
 			Lives--;
-			Health = health;
+			Health = 100;
 			onRespawn(respawn);
 		}
     }
 
     void onStartGame() { 
         characterController.enabled = true;
-		Lives = lives;
-		Health = health;
+		Lives = 3;
+		Health = 100;
+        Score = 0;
 	}
 
     public void onRespawn(GameObject respawn) { 
