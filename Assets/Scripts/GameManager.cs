@@ -6,12 +6,14 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager> {
     [SerializeField] GameObject titleUI;
-    [SerializeField] TMP_Text timerUI;
-    [SerializeField] GameObject respawn;
+    //[SerializeField] TMP_Text timerUI;
+    //[SerializeField] GameObject respawn;
 
     [Header("Events")]
     [SerializeField] VoidEvent gameStartEvent;
-    [SerializeField] GameObjectEvent respawnEvent;
+    //[SerializeField] GameObjectEvent respawnEvent;
+    //[SerializeField] FloatEvent timeEvent;
+
     public enum State { 
         TITLE,
         START_GAME,
@@ -19,14 +21,7 @@ public class GameManager : Singleton<GameManager> {
         GAMEOVER,
         GAME_WON
     }
-
     public State state = State.TITLE;
-    public float timer = 0;
-
-	public float Timer {
-		get { return timer; }
-		set { timer = value; timerUI.text = string.Format("{0:F1}", timer); }
-	}
 
     void OnEnable() {
         
@@ -49,16 +44,13 @@ public class GameManager : Singleton<GameManager> {
 				break;
 			case State.START_GAME:
                 titleUI.SetActive(false);
-                Timer = 60;
 				Cursor.lockState = CursorLockMode.Locked;
 				Cursor.visible = false;
                 gameStartEvent.RaiseEvent();
-                respawnEvent.RaiseEvent(respawn);
+                //respawnEvent.RaiseEvent(respawn);
 				state = State.PLAY_GAME;
 				break;
 			case State.PLAY_GAME:
-                Timer = Timer - Time.deltaTime;
-                if (Timer <= 0 ) state = State.GAMEOVER;
 				break;
 			case State.GAMEOVER:
 				break;

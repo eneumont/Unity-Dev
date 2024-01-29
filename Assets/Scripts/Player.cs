@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
     [SerializeField] IntEvent scoreEvent = default;
     [SerializeField] IntEvent livesEvent = default;
     [SerializeField] FloatEvent healthEvent = default;
+    [SerializeField] FloatEvent timeEvent = default;
     [SerializeField] VoidEvent gameStartEvent = default;
     [SerializeField] VoidEvent playerDeadEvent = default;
     private int score = 0;
@@ -30,7 +31,7 @@ public class Player : MonoBehaviour {
 	public float Health {
 		get { return health; }
 		set { health = value;
-			healthSlider.value = health / 100.0f; //might need to divide by 100.0f
+			healthSlider.value = health / 100.0f;
 			healthEvent.RaiseEvent(health);
 		}
 	}
@@ -44,11 +45,11 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-    private int timer = 0;
-    public int Timer { 
-        get { return timer; }
-        set { timer = value; timerText.text = string.Format("{0:F1}", timer); }
-    }
+	float timer = 0;
+	public float Timer {
+		get { return timer; }
+		set { timer = value; timerText.text = string.Format("{0:F1}", timer); }
+	}
 
 	void OnEnable() {
         gameStartEvent.Subscribe(onStartGame);
@@ -59,7 +60,8 @@ public class Player : MonoBehaviour {
     }
 
 	void Update() {
-
+        if (characterController.enabled) Timer -= Time.deltaTime;
+        if (Timer <= 0) Die();
 	}
 
 	public void AddPoints(int points) {
@@ -71,7 +73,7 @@ public class Player : MonoBehaviour {
     }
 
     public void Die() {
-        if (Lives == 0) {
+        if (Lives == 0 || Timer <= 0) {
             playerDeadEvent.RaiseEvent();
         } else {
 			Lives--;
@@ -85,6 +87,7 @@ public class Player : MonoBehaviour {
 		Lives = 3;
 		Health = 100;
         Score = 0;
+        Timer = 60;
 	}
 
     public void onRespawn(GameObject respawn) { 
@@ -96,5 +99,9 @@ public class Player : MonoBehaviour {
     public void Damage(float damage) { 
         Health -= damage;
         if (Health <= 0) Die();
+    }
+
+    public void moreTime(float time) {
+        Timer += time;
     }
 }

@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickup : MonoBehaviour
-{
+public class Pickup : MonoBehaviour {
     [SerializeField] GameObject pickupPrefab = null;
     [SerializeField] string pickupType = null;
 
-    void OnCollisionEnter(Collision collision)
-    {
+    void OnCollisionEnter(Collision collision) {
         print(collision.gameObject.name);    
     }
 
@@ -22,6 +20,7 @@ public class Pickup : MonoBehaviour
                     player.Healing(33);
                     break;
                 case "time":
+                    player.moreTime(10);
                     break;
             }
             
