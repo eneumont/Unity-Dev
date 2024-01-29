@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleUI: {fileID: 0}
-  timerUI: {fileID: 0}
   gameStartEvent: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
   state: 0
 --- !u!114 &303271809777437153

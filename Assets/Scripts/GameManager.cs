@@ -6,11 +6,16 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager> {
     [SerializeField] GameObject titleUI;
+    [SerializeField] GameObject playUI;
+    [SerializeField] GameObject gameoverUI;
+    [SerializeField] GameObject gamewonUI;
     //[SerializeField] TMP_Text timerUI;
     //[SerializeField] GameObject respawn;
 
     [Header("Events")]
     [SerializeField] VoidEvent gameStartEvent;
+    [SerializeField] VoidEvent gameOverEvent;
+    [SerializeField] VoidEvent gameWonEvent;
     //[SerializeField] GameObjectEvent respawnEvent;
     //[SerializeField] FloatEvent timeEvent;
 
@@ -39,11 +44,17 @@ public class GameManager : Singleton<GameManager> {
 		switch (state) {
 			case State.TITLE:
                 titleUI.SetActive(true);
+                playUI.SetActive(false);
+                gameoverUI.SetActive(false);
+                gamewonUI.SetActive(false);
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
 				break;
 			case State.START_GAME:
                 titleUI.SetActive(false);
+				playUI.SetActive(true);
+				gameoverUI.SetActive(false);
+				gamewonUI.SetActive(false);
 				Cursor.lockState = CursorLockMode.Locked;
 				Cursor.visible = false;
                 gameStartEvent.RaiseEvent();
@@ -53,11 +64,17 @@ public class GameManager : Singleton<GameManager> {
 			case State.PLAY_GAME:
 				break;
 			case State.GAMEOVER:
+				titleUI.SetActive(false);
+				playUI.SetActive(false);
+				gameoverUI.SetActive(true);
+				gamewonUI.SetActive(false);
 				break;
             case State.GAME_WON:
-                break;
-            default:
-                break;
+				titleUI.SetActive(false);
+				playUI.SetActive(false);
+				gameoverUI.SetActive(false);
+				gamewonUI.SetActive(true);
+				break;
 		}
 	}
 
@@ -66,10 +83,10 @@ public class GameManager : Singleton<GameManager> {
     }
 
     public void onPlayerDead() {
-        state = State.TITLE;
+        state = State.GAMEOVER;
     }
 
-    public void OnAddPoints(int points) {
-        print(points);
+    public void onPlayerWon() {
+        state = State.GAME_WON;
     }
 }

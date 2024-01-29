@@ -17,7 +17,10 @@ public class Player : MonoBehaviour {
     [SerializeField] FloatEvent healthEvent = default;
     [SerializeField] FloatEvent timeEvent = default;
     [SerializeField] VoidEvent gameStartEvent = default;
+    [SerializeField] VoidEvent gameWonEvent = default;
+    [SerializeField] VoidEvent gameOverEvent = default;
     [SerializeField] VoidEvent playerDeadEvent = default;
+    
     private int score = 0;
     public int Score { 
         get { return score; } 
@@ -53,6 +56,9 @@ public class Player : MonoBehaviour {
 
 	void OnEnable() {
         gameStartEvent.Subscribe(onStartGame);
+        gameStartEvent.Subscribe(onStartGame);
+        gameStartEvent.Subscribe(onStartGame);
+        print("Subcribed");
     }
 
     void Start () { 
@@ -82,8 +88,10 @@ public class Player : MonoBehaviour {
 		}
     }
 
-    void onStartGame() { 
+    void onStartGame() {
+        print("start player");
         characterController.enabled = true;
+        onRespawn(respawn);
 		Lives = 3;
 		Health = 100;
         Score = 0;

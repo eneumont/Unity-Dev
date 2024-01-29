@@ -7,7 +7,7 @@ public class Pickup : MonoBehaviour {
     [SerializeField] string pickupType = null;
 
     void OnCollisionEnter(Collision collision) {
-        print(collision.gameObject.name);    
+        //print(collision.gameObject.name);    
     }
 
     void OnTriggerEnter(Collider other) {
