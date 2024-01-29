@@ -51,14 +51,16 @@ public class Player : MonoBehaviour {
 	float timer = 0;
 	public float Timer {
 		get { return timer; }
-		set { timer = value; timerText.text = string.Format("{0:F1}", timer); }
+		set { timer = value; 
+            timerText.text = string.Format("{0:F1}", timer);
+            timeEvent.RaiseEvent(timer);
+        }
 	}
 
 	void OnEnable() {
         gameStartEvent.Subscribe(onStartGame);
-        gameStartEvent.Subscribe(onStartGame);
-        gameStartEvent.Subscribe(onStartGame);
-        print("Subcribed");
+        //gameWonEvent.Subscribe(onStartGame);
+        //gameOverEvent.Subscribe(onStartGame);
     }
 
     void Start () { 
@@ -80,7 +82,7 @@ public class Player : MonoBehaviour {
 
     public void Die() {
         if (Lives == 0 || Timer <= 0) {
-            playerDeadEvent.RaiseEvent();
+            gameOverEvent.RaiseEvent();
         } else {
 			Lives--;
 			Health = 100;
@@ -89,7 +91,6 @@ public class Player : MonoBehaviour {
     }
 
     void onStartGame() {
-        print("start player");
         characterController.enabled = true;
         onRespawn(respawn);
 		Lives = 3;

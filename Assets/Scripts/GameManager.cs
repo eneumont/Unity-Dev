@@ -89,4 +89,8 @@ public class GameManager : Singleton<GameManager> {
     public void onPlayerWon() {
         state = State.GAME_WON;
     }
+
+    public void end() { 
+        Application.Quit();
+    }
 }
