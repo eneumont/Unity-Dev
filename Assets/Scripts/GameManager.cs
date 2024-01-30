@@ -27,19 +27,10 @@ public class GameManager : Singleton<GameManager> {
         GAME_WON
     }
     public State state = State.TITLE;
-    bool playMusic = false;
 
     void OnEnable() {
         gameOverEvent.Subscribe(onPlayerDead);
         gameWonEvent.Subscribe(onPlayerWon);
-    }
-
-    void OnDisable() {
-
-    }
-
-    void Start() {
-
     }
 
     void Update() {
