@@ -7,8 +7,7 @@ using Unity.Mathematics;
 public class PathFollower : MonoBehaviour {
     [SerializeField] SplineContainer splineContainer;
     [Range(0, 40)] float speed = 1;
-
-    float tdistance = 0; // distance along spline (0 - 1)
+	[Range(0, 1)] public float tdistance = 0; // distance along spline (0 - 1)
 
     public float length { get { return splineContainer.CalculateLength(); } }
     public float distance {
