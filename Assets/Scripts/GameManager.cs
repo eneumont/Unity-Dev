@@ -9,15 +9,11 @@ public class GameManager : Singleton<GameManager> {
     [SerializeField] GameObject playUI;
     [SerializeField] GameObject gameoverUI;
     [SerializeField] GameObject gamewonUI;
-    //[SerializeField] TMP_Text timerUI;
-    //[SerializeField] GameObject respawn;
 
     [Header("Events")]
     [SerializeField] VoidEvent gameStartEvent;
     [SerializeField] VoidEvent gameOverEvent;
     [SerializeField] VoidEvent gameWonEvent;
-    //[SerializeField] GameObjectEvent respawnEvent;
-    //[SerializeField] FloatEvent timeEvent;
 
     public enum State { 
         TITLE,
@@ -58,7 +54,6 @@ public class GameManager : Singleton<GameManager> {
 				Cursor.lockState = CursorLockMode.Locked;
 				Cursor.visible = false;
                 gameStartEvent.RaiseEvent();
-                //respawnEvent.RaiseEvent(respawn);
 				state = State.PLAY_GAME;
 				break;
 			case State.PLAY_GAME:
