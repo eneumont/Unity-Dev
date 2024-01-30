@@ -15,7 +15,7 @@ public class GameManager : Singleton<GameManager> {
     [SerializeField] VoidEvent gameOverEvent;
     [SerializeField] VoidEvent gameWonEvent;
 
-    public enum State { 
+    public enum State {
         TITLE,
         START_GAME,
         PLAY_GAME,
@@ -25,55 +25,60 @@ public class GameManager : Singleton<GameManager> {
     public State state = State.TITLE;
 
     void OnEnable() {
-        
+        gameOverEvent.Subscribe(onPlayerDead);
+        gameWonEvent.Subscribe(onPlayerWon);
     }
 
     void OnDisable() {
-        
+
     }
 
     void Start() {
-        
+
     }
 
     void Update() {
-		switch (state) {
-			case State.TITLE:
+        switch (state) {
+            case State.TITLE:
                 titleUI.SetActive(true);
                 playUI.SetActive(false);
                 gameoverUI.SetActive(false);
                 gamewonUI.SetActive(false);
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-				break;
-			case State.START_GAME:
+                break;
+            case State.START_GAME:
                 titleUI.SetActive(false);
-				playUI.SetActive(true);
-				gameoverUI.SetActive(false);
-				gamewonUI.SetActive(false);
-				Cursor.lockState = CursorLockMode.Locked;
-				Cursor.visible = false;
+                playUI.SetActive(true);
+                gameoverUI.SetActive(false);
+                gamewonUI.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 gameStartEvent.RaiseEvent();
-				state = State.PLAY_GAME;
-				break;
-			case State.PLAY_GAME:
-				break;
-			case State.GAMEOVER:
-				titleUI.SetActive(false);
-				playUI.SetActive(false);
-				gameoverUI.SetActive(true);
-				gamewonUI.SetActive(false);
+                state = State.PLAY_GAME;
+                break;
+            case State.PLAY_GAME:
+                break;
+            case State.GAMEOVER:
+                titleUI.SetActive(false);
+                playUI.SetActive(false);
+                gameoverUI.SetActive(true);
+                gamewonUI.SetActive(false);
+				Cursor.lockState = CursorLockMode.None;
+				Cursor.visible = true;
 				break;
             case State.GAME_WON:
-				titleUI.SetActive(false);
-				playUI.SetActive(false);
-				gameoverUI.SetActive(false);
-				gamewonUI.SetActive(true);
+                titleUI.SetActive(false);
+                playUI.SetActive(false);
+                gameoverUI.SetActive(false);
+                gamewonUI.SetActive(true);
+				Cursor.lockState = CursorLockMode.None;
+				Cursor.visible = true;
 				break;
-		}
-	}
+        }
+    }
 
-    public void onStartGame() { 
+    public void onStartGame() {
         state = State.START_GAME;
     }
 
@@ -85,7 +90,7 @@ public class GameManager : Singleton<GameManager> {
         state = State.GAME_WON;
     }
 
-    public void end() { 
+    public void end() {
         Application.Quit();
     }
 }

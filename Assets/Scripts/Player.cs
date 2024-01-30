@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
     [SerializeField] TMP_Text scoreText;
+    [SerializeField] TMP_Text endscoreText;
     [SerializeField] Slider healthSlider;
     [SerializeField] TMP_Text livesText;
     [SerializeField] TMP_Text timerText;
@@ -20,21 +21,21 @@ public class Player : MonoBehaviour {
     [SerializeField] VoidEvent gameWonEvent = default;
     [SerializeField] VoidEvent gameOverEvent = default;
     [SerializeField] VoidEvent playerDeadEvent = default;
-    
+
     private int score = 0;
     public int Score { 
         get { return score; } 
         set { score = value; 
-            scoreText.text = score.ToString();
+            scoreText.text = "Score: " + score.ToString();
             scoreEvent.RaiseEvent(score);
         } 
     }
 
-	[SerializeField] float health = 100;
+	private float health = 100.0f;
 	public float Health {
 		get { return health; }
 		set { health = value;
-			healthSlider.value = health / 100.0f;
+			healthSlider.value = health;
 			healthEvent.RaiseEvent(health);
 		}
 	}
@@ -52,15 +53,13 @@ public class Player : MonoBehaviour {
 	public float Timer {
 		get { return timer; }
 		set { timer = value; 
-            timerText.text = string.Format("{0:F1}", timer);
+            timerText.text = string.Format("Time:\n{0:F1}", timer);
             timeEvent.RaiseEvent(timer);
         }
 	}
 
 	void OnEnable() {
         gameStartEvent.Subscribe(onStartGame);
-        //gameWonEvent.Subscribe(onStartGame);
-        //gameOverEvent.Subscribe(onStartGame);
     }
 
     void Start () { 
@@ -91,12 +90,12 @@ public class Player : MonoBehaviour {
     }
 
     void onStartGame() {
-        characterController.enabled = true;
-        onRespawn(respawn);
 		Lives = 3;
 		Health = 100;
-        Score = 0;
-        Timer = 60;
+		Score = 0;
+		Timer = 60;
+		characterController.enabled = true;
+		onRespawn(respawn);
 	}
 
     public void onRespawn(GameObject respawn) { 
@@ -112,5 +111,11 @@ public class Player : MonoBehaviour {
 
     public void moreTime(float time) {
         Timer += time;
+    }
+
+    public void winGame() {
+        characterController.enabled = false;
+        endscoreText.text = "Score: " + (score + timer * 2);
+        gameWonEvent.RaiseEvent();
     }
 }

@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-class Win : MonoBehaviour {
+public class Win : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.TryGetComponent(out Player player)) ; 	
+		if (other.gameObject.TryGetComponent(out Player player)) player.winGame(); 	
 	}
 }
