@@ -67,8 +67,10 @@ public class Player : MonoBehaviour {
     }
 
 	void Update() {
-        if (characterController.enabled) Timer -= Time.deltaTime;
-        if (Timer <= 0) Die();
+        if (characterController.enabled) {
+            Timer -= Time.deltaTime;
+			if (Timer <= 0) Die();
+		}
 	}
 
 	public void AddPoints(int points) {
@@ -115,6 +117,7 @@ public class Player : MonoBehaviour {
 
     public void winGame() {
         characterController.enabled = false;
+        characterController.Reset();
         endscoreText.text = "Score: " + (score + timer * 2);
         gameWonEvent.RaiseEvent();
     }
