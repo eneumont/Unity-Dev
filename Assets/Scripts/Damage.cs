@@ -18,3 +18,7 @@ public class Damage : MonoBehaviour {
         }
     }
 }
+
+public interface IDamagable { 
+    void ApplyDamage(float damage);
+}
