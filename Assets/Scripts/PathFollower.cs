@@ -20,7 +20,7 @@ public class PathFollower : MonoBehaviour {
 	}
 
 	void Update() {
-        distance += speed * Time.deltaTime;
+        distance += (speed * 5) * Time.deltaTime;
         updateTransform(math.frac(tdistance));
     }
 

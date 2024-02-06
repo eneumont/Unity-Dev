@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Item : MonoBehaviour
-{
+public abstract class Item : MonoBehaviour {
+	[SerializeField] Action action;
 	public virtual bool isEquipped { get; set; } = false;
 
 	public virtual void Equip()

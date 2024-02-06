@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class Spawner : MonoBehaviour, IInteractable {
+	[SerializeField] Action action;
 	[SerializeField] GameObject[] spawnPrefabs;
 	[SerializeField] Transform parentTransform = null;
 
@@ -35,6 +36,12 @@ public abstract class Spawner : MonoBehaviour, IInteractable {
 		active = enableOnAwake;
 		if (active) {
 			SetActive();
+		}
+
+		if (action != null) {
+			action.onEnter += OnInteractStart;
+			action.onEnter += OnInteractStart;
+			action.onEnter += OnInteractStart;
 		}
 	}
 
@@ -87,11 +94,16 @@ public abstract class Spawner : MonoBehaviour, IInteractable {
 		}
 	}
 
-	public void onEnter() {
+	public void OnInteractStart(GameObject gameObject) {
 		SetActive();
 	}
 
-	public void onExit() {
+	public void OnInteractActive(GameObject gameObject)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public void OnInteractEnd(GameObject gameObject) {
 		SetInactive();
 	}
 }
