@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour, IDamagable {
 			}
 			Destroy(gameObject);
 		} else {
-			if (destroyPrefab) {
+			if (hitPrefab) {
 				Instantiate(hitPrefab, gameObject.transform.position, Quaternion.identity);
 			}
 		}
