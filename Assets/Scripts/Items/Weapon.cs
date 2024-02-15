@@ -11,7 +11,6 @@ public class Weapon : Item {
 
 	private int ammoCount = 0;
 	private bool weaponReady = false;
-
 	private IEnumerator autoFireCoroutine;
 
 	private void Start() {
@@ -43,55 +42,42 @@ public class Weapon : Item {
 		if (weaponData.animTriggerName != "" && animator != null) { 
 			animator.SetTrigger(weaponData.animTriggerName);
 			weaponReady = false;
-		}
-		else
-		{
+		} else {
 			// create ammo prefab
-			if (weaponData.usageType == UsageType.SINGLE || weaponData.usageType == UsageType.BURST)
-			{
+			if (weaponData.usageType == UsageType.SINGLE || weaponData.usageType == UsageType.BURST) {
 				Instantiate(weaponData.ammoPrefab, ammoTransform.position, ammoTransform.rotation);
-				if (weaponData.fireRate > 0)
-				{
+				if (weaponData.fireRate > 0) {
 					weaponReady = false;
 					StartCoroutine(ResetFireTimer());
 				}
-			}
-			else
-			{
+			} else {
 				StartCoroutine(autoFireCoroutine);
 			}
 		}
 	}
 
-	public override void StopUse()
-	{
+	public override void StopUse() {
 		if (weaponData.usageType == UsageType.SINGLE || weaponData.usageType == UsageType.BURST) weaponReady = true;
 		StopCoroutine(autoFireCoroutine);
-
 	}
 
-	public override bool isReady()
-	{
+	public override bool isReady() {
 		// check if ammo exists or weapon does not have rounds
 		return weaponReady && (ammoCount > 0 || weaponData.rounds == 0);
 	}
 
-	public override void OnAnimEventItemUse()
-	{
+	public override void OnAnimEventItemUse() {
 		// create ammo prefab
 		Instantiate(weaponData.ammoPrefab, ammoTransform.position, ammoTransform.rotation);
 	}
 
-	IEnumerator ResetFireTimer()
-	{
+	IEnumerator ResetFireTimer() {
 		yield return new WaitForSeconds(weaponData.fireRate);
 		weaponReady = true;
 	}
 
-	IEnumerator AutoFire()
-	{
-		while (true)
-		{
+	IEnumerator AutoFire() {
+		while (true) {
 			Instantiate(weaponData.ammoPrefab, ammoTransform.position, ammoTransform.rotation);
 			yield return new WaitForSeconds(weaponData.fireRate);
 		}

@@ -98,8 +98,7 @@ public abstract class Spawner : MonoBehaviour, IInteractable {
 		SetActive();
 	}
 
-	public void OnInteractActive(GameObject gameObject)
-	{
+	public void OnInteractActive(GameObject gameObject) {
 		throw new System.NotImplementedException();
 	}
 

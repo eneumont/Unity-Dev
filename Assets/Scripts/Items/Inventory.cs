@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour {
-	[SerializeField] Item[] items;
-	public Item currentItem { get; private set; }
+	[SerializeField] public Item[] items; //was not public
+	public Item currentItem { get; set; } //set was private
 	void Start () {
 		currentItem = items[0];
 		currentItem.Equip();

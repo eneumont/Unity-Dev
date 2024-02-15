@@ -6,14 +6,12 @@ public abstract class Item : MonoBehaviour {
 	[SerializeField] Action action;
 	public virtual bool isEquipped { get; set; } = false;
 
-	public virtual void Equip()
-	{
+	public virtual void Equip() {
 		gameObject.SetActive(true);
 		isEquipped = true;
 	}
 
-	public virtual void Unequip()
-	{
+	public virtual void Unequip() {
 		gameObject.SetActive(false);
 		isEquipped = false;
 	}
