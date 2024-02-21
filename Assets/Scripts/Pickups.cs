@@ -12,16 +12,13 @@ public class Pickups : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.TryGetComponent(out Player player)) {
+		if (other.gameObject.TryGetComponent(out PlayerShip player)) {
 			switch (pickupType) {
 				case "score":
 					player.AddPoints(points);
 					break;
 				case "health":
-					player.Healing(points);
-					break;
-				case "time":
-					player.moreTime(points);
+					player.ApplyHealth(points);
 					break;
 			}
 		}
