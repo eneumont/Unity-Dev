@@ -6,7 +6,6 @@ public class Destructable : MonoBehaviour, IDamagable {
 	[SerializeField] float health = 100;
 	[SerializeField] GameObject hitPrefab;
 	[SerializeField] GameObject destroyPrefab;
-
 	bool destroyed = false;
 
 	public void ApplyDamage(float damage) {

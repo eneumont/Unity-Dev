@@ -11,54 +11,40 @@ public class CollisionAction : Action {
 	[SerializeField] private string tagName;
 
 	#region COLLISION EVENTS
-
-	public void OnTriggerEnter(Collider other)
-	{
-		if (tagName == string.Empty || other.CompareTag(tagName))
-		{
+	public void OnTriggerEnter(Collider other) {
+		if (tagName == string.Empty || other.CompareTag(tagName)) {
 			onEnter?.Invoke(other.gameObject);
 		}
 	}
 
-	public void OnTriggerStay(Collider other)
-	{
-		if (tagName == string.Empty || other.CompareTag(tagName))
-		{
+	public void OnTriggerStay(Collider other) {
+		if (tagName == string.Empty || other.CompareTag(tagName)) {
 			onStay?.Invoke(other.gameObject);
 		}
 	}
 
-	public void OnTriggerExit(Collider other)
-	{
-		if (tagName == string.Empty || other.CompareTag(tagName))
-		{
+	public void OnTriggerExit(Collider other) {
+		if (tagName == string.Empty || other.CompareTag(tagName)) {
 			onExit?.Invoke(other.gameObject);
 		}
 	}
 
-	public void OnCollisionEnter(Collision collision)
-	{
-		if (tagName == string.Empty || collision.gameObject.CompareTag(tagName))
-		{
+	public void OnCollisionEnter(Collision collision) {
+		if (tagName == string.Empty || collision.gameObject.CompareTag(tagName)) {
 			onEnter?.Invoke(collision.gameObject);
 		}
 	}
 
-	public void OnCollisionStay(Collision collision)
-	{
-		if (tagName == string.Empty || collision.gameObject.CompareTag(tagName))
-		{
+	public void OnCollisionStay(Collision collision) {
+		if (tagName == string.Empty || collision.gameObject.CompareTag(tagName)) {
 			onStay?.Invoke(collision.gameObject);
 		}
 	}
 
-	public void OnCollisionExit(Collision collision)
-	{
-		if (tagName == string.Empty || collision.gameObject.CompareTag(tagName))
-		{
+	public void OnCollisionExit(Collision collision) {
+		if (tagName == string.Empty || collision.gameObject.CompareTag(tagName)) {
 			onExit?.Invoke(collision.gameObject);
 		}
 	}
-
 	#endregion
 }
