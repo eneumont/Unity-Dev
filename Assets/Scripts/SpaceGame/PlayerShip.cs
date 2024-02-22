@@ -22,7 +22,6 @@ public class PlayerShip : MonoBehaviour, IDamagable {
 	[SerializeField] IntEvent livesEvent;
 	bool weapon1 = true;
 
-
 	void Start () {
 		scoreEvent.Subscribe(AddPoints);
         health.value = 100;

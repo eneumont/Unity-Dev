@@ -7,7 +7,9 @@ using Unity.Mathematics;
 public class PathFollower : MonoBehaviour {
     [SerializeField] SplineContainer splineContainer;
     [Range(0, 40)] public float speed = 1;
-	[Range(0, 1)] public float tdistance = 0; // distance along spline (0 - 1)
+    [Range(0, 1)] public float tdistance = 0; // distance along spline (0 - 1)
+    [SerializeField] VoidEvent gameStart;
+    bool start = false;
 
     public float length { get { return splineContainer.CalculateLength(); } }
     public float distance {
@@ -15,13 +17,19 @@ public class PathFollower : MonoBehaviour {
         set { tdistance = value / length; }
     }
 
+	void OnEnable() {
+        gameStart.Subscribe(starting);
+	}
+
 	void Start() {
         
 	}
 
 	void Update() {
-        distance += (speed * 5) * Time.deltaTime;
-        updateTransform(math.frac(tdistance));
+        if (start) {
+            distance += (speed * 5) * Time.deltaTime;
+            updateTransform(math.frac(tdistance));
+        }
     }
 
     void updateTransform(float t) { 
@@ -31,5 +39,9 @@ public class PathFollower : MonoBehaviour {
         Vector3 right = Vector3.Cross(up, forward);
         transform.position = position;
         transform.rotation = Quaternion.LookRotation(forward, up);
+    }
+
+    void starting() { 
+        start = true;
     }
 }
