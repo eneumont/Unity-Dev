@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class PlayerShip : MonoBehaviour, IDamagable {
 	[SerializeField] PathFollower pathfollower;
@@ -12,21 +13,28 @@ public class PlayerShip : MonoBehaviour, IDamagable {
 	[SerializeField] FloatVariable health;
 	[SerializeField] GameObject hitPrefab;
 	[SerializeField] GameObject deathPrefab;
-	[SerializeField] GameObject respawn;
+	[SerializeField] GameObject respawnObj;
 	[SerializeField] Slider healthSlider;
 	[SerializeField] TMP_Text livesText;
 	[SerializeField] TMP_Text scoreText;
 	[SerializeField] TMP_Text endScoreText;
 	[Header("Events")]
-	[SerializeField] IntEvent scoreEvent;
-	[SerializeField] IntEvent livesEvent;
+	[SerializeField] VoidEvent gameStartEvent = default;
+	[SerializeField] VoidEvent gameWonEvent = default;
+	[SerializeField] VoidEvent gameOverEvent = default;
+	[SerializeField] VoidEvent playerDeadEvent = default;
+	[SerializeField] GameObjectEvent respawnEvent;
 	bool weapon1 = true;
 
 	void Start () {
-		scoreEvent.Subscribe(AddPoints);
+		respawnEvent.Subscribe(respawn);
+
         health.value = 100;
 		score.value = 0;
-		lives.value = 0;
+		lives.value = 3;
+		healthSlider.value = health.value;
+		scoreText.text = "Score: " + score.value;
+		livesText.text = "Lives: " + lives.value;
     }
 
     void Update() {
@@ -63,5 +71,25 @@ public class PlayerShip : MonoBehaviour, IDamagable {
 	public void ApplyHealth(float health) { 
 		this.health.value += health;
 		this.health.value = Mathf.Min(this.health.value, 100);
+	}
+
+	public void respawn(GameObject respawn) {
+		pathfollower.tdistance = respawn.GetComponent<PathFollower>().tdistance;
+	}
+
+	public void winGame() {
+		pathfollower.enabled = false;
+		endScoreText.text = "Score: " + score;
+		gameWonEvent.RaiseEvent();
+	}
+
+	public void Die() {
+		if (lives.value == 0) {
+			gameOverEvent.RaiseEvent();
+		} else {
+			lives.value--;
+			health.value = 100;
+			respawn(respawnObj);
+		}
 	}
 }
