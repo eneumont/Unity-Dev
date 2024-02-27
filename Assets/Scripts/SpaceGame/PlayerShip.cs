@@ -23,13 +23,16 @@ public class PlayerShip : MonoBehaviour, IDamagable {
 	[SerializeField] VoidEvent gameWonEvent = default;
 	[SerializeField] VoidEvent gameOverEvent = default;
 	[SerializeField] VoidEvent playerDeadEvent = default;
+	[SerializeField] IntEvent scoreEvent = default;
 	[SerializeField] GameObjectEvent respawnEvent;
 	bool weapon1 = true;
 
 	void Start () {
 		respawnEvent.Subscribe(respawn);
 		gameStartEvent.Subscribe(startGame);
-    }
+		scoreEvent.Subscribe(AddPoints);
+
+	}
 
     void Update() {
 		if (Input.GetKeyUp(KeyCode.T)) {
@@ -45,7 +48,8 @@ public class PlayerShip : MonoBehaviour, IDamagable {
 
 	public void AddPoints(int points) {
 		score.value += points;
-		Debug.Log(score.value);
+		scoreText.text = "Score: " + score.value;
+		//Debug.Log(score.value);
 	}
 
 	public void ApplyDamage(float damage) {
@@ -55,16 +59,19 @@ public class PlayerShip : MonoBehaviour, IDamagable {
 				Instantiate(deathPrefab, gameObject.transform.position, Quaternion.identity);
 			}
 			Destroy(gameObject);
+			Die();
 		} else {
 			if (hitPrefab) {
 				Instantiate(hitPrefab, gameObject.transform.position, Quaternion.identity);
 			}
 		}
+		healthSlider.value = this.health.value;
 	}
 
 	public void ApplyHealth(float health) { 
 		this.health.value += health;
 		this.health.value = Mathf.Min(this.health.value, 100);
+		healthSlider.value = this.health.value;
 	}
 
 	public void respawn(GameObject respawn) {

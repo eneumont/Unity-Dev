@@ -133,11 +133,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -206,11 +210,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -279,11 +287,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -351,6 +363,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 995143763177395228, guid: bd9380ce2ba2e5847b0083256a6835b8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
+    - target: {fileID: 995143763177395228, guid: bd9380ce2ba2e5847b0083256a6835b8, type: 3}
       propertyPath: gameStart
       value: 
       objectReference: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
@@ -410,9 +426,17 @@ PrefabInstance:
       propertyPath: action
       value: 
       objectReference: {fileID: 2010879586}
+    - target: {fileID: 5201647154351943464, guid: bd9380ce2ba2e5847b0083256a6835b8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5887819008310398798, guid: bd9380ce2ba2e5847b0083256a6835b8, type: 3}
       propertyPath: m_Name
       value: PlayerShipFollower
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887819008310398798, guid: bd9380ce2ba2e5847b0083256a6835b8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5887819008310398798, guid: bd9380ce2ba2e5847b0083256a6835b8, type: 3}
       propertyPath: m_TagString
@@ -477,11 +501,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -557,6 +585,10 @@ PrefabInstance:
       value: EnemyShipp (8)
       objectReference: {fileID: 0}
     - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -564,6 +596,10 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
     - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: gameStart
       value: 
@@ -752,11 +788,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -845,11 +885,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1055,11 +1099,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1128,11 +1176,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1208,6 +1260,10 @@ PrefabInstance:
       value: EnemyShipp (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -1215,6 +1271,10 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
     - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: gameStart
       value: 
@@ -1562,11 +1622,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: TreasureAsteroid (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1648,6 +1712,10 @@ PrefabInstance:
     - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_Name
       value: Health (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4984749415852588, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1760,11 +1828,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1843,11 +1915,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1916,11 +1992,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1988,7 +2068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 264838745}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PickUps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2023,6 +2103,10 @@ PrefabInstance:
     - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_Name
       value: Health (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4984749415852588, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2142,6 +2226,10 @@ PrefabInstance:
       value: EnemyShipp (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -2149,6 +2237,10 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
     - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: gameStart
       value: 
@@ -2230,6 +2322,10 @@ PrefabInstance:
     - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_Name
       value: Health (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4984749415852588, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2352,11 +2448,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -2425,11 +2525,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -2503,11 +2607,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -2576,11 +2684,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -2649,11 +2761,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -2722,11 +2838,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -2795,11 +2915,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -2877,7 +3001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 348108774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3541,11 +3665,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -3619,11 +3747,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -3958,11 +4090,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: TreasureAsteroid (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -4127,9 +4263,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 432341525}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemies
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4225,6 +4361,10 @@ PrefabInstance:
     - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_Name
       value: Score (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4938720506320106, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_LocalScale.x
@@ -4342,6 +4482,7 @@ MonoBehaviour:
   speed: 0
   tdistance: 0.6
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!65 &463662303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4393,11 +4534,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -4471,11 +4616,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -4549,11 +4698,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -4851,11 +5004,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -5174,11 +5331,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -5252,11 +5413,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -5593,11 +5758,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: TreasureAsteroid (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -5807,6 +5976,10 @@ PrefabInstance:
     - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_Name
       value: Health (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4984749415852588, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6558,6 +6731,10 @@ PrefabInstance:
       value: EnemyShipp (6)
       objectReference: {fileID: 0}
     - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -6565,6 +6742,10 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
     - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: gameStart
       value: 
@@ -6642,7 +6823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3752815929a2c94dbb463ff3de0a214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: Player
+  tagName: 
 --- !u!4 &685764245 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
@@ -6659,6 +6840,10 @@ PrefabInstance:
     - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_Name
       value: Health (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4984749415852588, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6771,11 +6956,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -6845,6 +7034,10 @@ PrefabInstance:
     - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_Name
       value: Health (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4984749415852588, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7543,11 +7736,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -7621,11 +7818,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -8160,7 +8361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 799547740}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HealthPickUps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8201,11 +8402,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -8279,11 +8484,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -8352,11 +8561,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -8425,11 +8638,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -8498,11 +8715,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -8576,11 +8797,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -8654,11 +8879,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -8726,7 +8955,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 913663876}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8758,11 +8987,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9033,11 +9266,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9106,11 +9343,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9179,11 +9420,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9252,11 +9497,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9332,6 +9581,10 @@ PrefabInstance:
       value: EnemyShipp (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -9339,6 +9592,10 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
     - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: gameStart
       value: 
@@ -9420,7 +9677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3752815929a2c94dbb463ff3de0a214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: Player
+  tagName: 
 --- !u!1001 &1019418497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9431,11 +9688,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9576,11 +9837,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9649,11 +9914,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9999,11 +10268,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: TreasureAsteroid (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -10084,11 +10357,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -10157,11 +10434,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -10230,11 +10511,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -10703,11 +10988,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -10777,6 +11066,10 @@ PrefabInstance:
     - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_Name
       value: Health
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4984749415852588, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10914,11 +11207,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -11121,11 +11418,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -11194,11 +11495,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -11272,11 +11577,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -11345,11 +11654,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -11425,6 +11738,10 @@ PrefabInstance:
       value: EnemyShipp (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -11432,6 +11749,10 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
     - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: gameStart
       value: 
@@ -11510,7 +11831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1281736234}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11631,11 +11952,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -11711,7 +12036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3752815929a2c94dbb463ff3de0a214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: Player
+  tagName: 
 --- !u!1001 &1310880100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11722,11 +12047,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -11800,11 +12129,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -12001,11 +12334,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -12075,6 +12412,10 @@ PrefabInstance:
     - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_Name
       value: Score (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4938720506320106, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_LocalScale.x
@@ -12192,6 +12533,7 @@ MonoBehaviour:
   speed: 0
   tdistance: 0.9
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!65 &1350783478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12223,11 +12565,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -12432,6 +12778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4938720506320106, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.010072054
@@ -12548,6 +12898,7 @@ MonoBehaviour:
   speed: 0
   tdistance: 0.5
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!65 &1373950580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12580,6 +12931,10 @@ PrefabInstance:
     - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_Name
       value: Health (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4984749415852588, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12692,11 +13047,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -12765,11 +13124,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -12838,11 +13201,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -12918,6 +13285,10 @@ PrefabInstance:
       value: EnemyShipp (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -12925,6 +13296,10 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
     - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: gameStart
       value: 
@@ -13006,7 +13381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3752815929a2c94dbb463ff3de0a214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: Player
+  tagName: 
 --- !u!1001 &1410082152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13018,6 +13393,10 @@ PrefabInstance:
     - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_Name
       value: Score (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4938720506320106, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_LocalScale.x
@@ -13135,6 +13514,7 @@ MonoBehaviour:
   speed: 0
   tdistance: 0.7
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!65 &1410082160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13218,6 +13598,10 @@ PrefabInstance:
     - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_Name
       value: Score (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4938720506320106, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_LocalScale.x
@@ -13335,6 +13719,7 @@ MonoBehaviour:
   speed: 0
   tdistance: 0.3
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!65 &1415603607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13364,9 +13749,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1281736234}
     m_Modifications:
+    - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: tagName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13644,6 +14037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4938720506320106, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.010072054
@@ -13760,6 +14157,7 @@ MonoBehaviour:
   speed: 0
   tdistance: 0.2
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!65 &1479077768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13791,11 +14189,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -14166,7 +14568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3752815929a2c94dbb463ff3de0a214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: Player
+  tagName: 
 --- !u!1001 &1548336337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14177,11 +14579,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -14409,11 +14815,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -14482,11 +14892,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -14554,7 +14968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1610043610}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ScorePickUps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14595,11 +15009,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -14668,11 +15086,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: TreasureAsteroid (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -14753,11 +15175,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -14967,6 +15393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4938720506320106, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.010072054
@@ -15083,6 +15513,7 @@ MonoBehaviour:
   speed: 0
   tdistance: 0.4
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!65 &1643260868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15114,11 +15545,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -15199,6 +15634,10 @@ PrefabInstance:
       value: EnemyShipp (7)
       objectReference: {fileID: 0}
     - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -15206,6 +15645,10 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
     - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: gameStart
       value: 
@@ -15287,7 +15730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3752815929a2c94dbb463ff3de0a214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: Player
+  tagName: 
 --- !u!1001 &1684908119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15298,11 +15741,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -15459,6 +15906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score
       objectReference: {fileID: 0}
+    - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4938720506320106, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.010072054
@@ -15575,6 +16026,7 @@ MonoBehaviour:
   speed: 0
   tdistance: 0.1
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!65 &1700840830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15616,11 +16068,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -15689,11 +16145,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -15762,11 +16222,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -15840,11 +16304,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -15919,6 +16387,10 @@ PrefabInstance:
     - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_Name
       value: Score (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253286640031572, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4938720506320106, guid: 6e0deafa173995d4c8bc0468ad071d42, type: 3}
       propertyPath: m_LocalScale.x
@@ -16036,6 +16508,7 @@ MonoBehaviour:
   speed: 0
   tdistance: 0.8
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!65 &1758137777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16067,11 +16540,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -16150,11 +16627,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -16492,7 +16973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3752815929a2c94dbb463ff3de0a214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: Player
+  tagName: 
 --- !u!1 &1818981874
 GameObject:
   m_ObjectHideFlags: 0
@@ -16636,11 +17117,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -16757,6 +17242,7 @@ MonoBehaviour:
   speed: 0.5
   tdistance: 0
   gameStart: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
+  gameOver: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
 --- !u!1 &1871570862
 GameObject:
   m_ObjectHideFlags: 0
@@ -16802,11 +17288,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -16875,11 +17365,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: TreasureAsteroid (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -17006,11 +17500,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: TreasureAsteroid (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -17167,11 +17665,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -17385,6 +17887,10 @@ PrefabInstance:
     - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_Name
       value: Health (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739999478320872, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4984749415852588, guid: c10dce192eb6319479589ded5f0757ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17824,11 +18330,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -17904,7 +18414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3752815929a2c94dbb463ff3de0a214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: Player
+  tagName: 
 --- !u!1001 &2098772215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17957,6 +18467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 4332007019208625162, guid: a23382914fce8564bbaa22a6dc675975, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6609105095977942825, guid: a23382914fce8564bbaa22a6dc675975, type: 3}
       propertyPath: startEvent
       value: 
@@ -18007,7 +18521,7 @@ PrefabInstance:
       objectReference: {fileID: 4771927191420801971, guid: 93d54afe2e1e75f4890a5378544c2d69, type: 3}
     - target: {fileID: 7980184143275190739, guid: a23382914fce8564bbaa22a6dc675975, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18055,11 +18569,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274734104718094989, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: tagName
-      value: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_Name
       value: Asteroid2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259993839739438006, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1581883229070412144, guid: 81f1ba989f0d3474d8c802e6721f08cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -18135,7 +18653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3752815929a2c94dbb463ff3de0a214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: Player
+  tagName: 
 --- !u!1001 &217047946130917006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18153,6 +18671,10 @@ PrefabInstance:
       value: EnemyShipp
       objectReference: {fileID: 0}
     - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408437228338337288, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -18160,6 +18682,10 @@ PrefabInstance:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
     - target: {fileID: 2283557235803235727, guid: 1dc554d39cbb1744988710a4cd0b68e8, type: 3}
       propertyPath: gameStart
       value: 
@@ -18236,6 +18762,14 @@ PrefabInstance:
     - target: {fileID: 4771927191420801971, guid: 93d54afe2e1e75f4890a5378544c2d69, type: 3}
       propertyPath: m_Name
       value: TreasureAsteroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771927191420801971, guid: 93d54afe2e1e75f4890a5378544c2d69, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190546526417342648, guid: 93d54afe2e1e75f4890a5378544c2d69, type: 3}
+      propertyPath: tagName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8887160720043509483, guid: 93d54afe2e1e75f4890a5378544c2d69, type: 3}
       propertyPath: m_LocalPosition.x

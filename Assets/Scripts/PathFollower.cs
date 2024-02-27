@@ -9,6 +9,7 @@ public class PathFollower : MonoBehaviour {
     [Range(0, 40)] public float speed = 1;
     [Range(0, 1)] public float tdistance = 0; // distance along spline (0 - 1)
     [SerializeField] VoidEvent gameStart;
+    [SerializeField] VoidEvent gameOver;
     bool start = false;
 
     public float length { get { return splineContainer.CalculateLength(); } }
@@ -19,6 +20,7 @@ public class PathFollower : MonoBehaviour {
 
 	void OnEnable() {
         gameStart.Subscribe(starting);
+        gameOver.Subscribe(ending);
 	}
 
 	void Start() {
@@ -41,7 +43,14 @@ public class PathFollower : MonoBehaviour {
         transform.rotation = Quaternion.LookRotation(forward, up);
     }
 
-    void starting() { 
+    void starting() {
+        gameObject.SetActive(true);
         start = true;
+        tdistance = 0;
+    }
+
+    void ending() {
+        start = false;
+        gameObject.SetActive(false);
     }
 }
