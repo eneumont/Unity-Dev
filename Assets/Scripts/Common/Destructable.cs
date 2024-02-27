@@ -15,7 +15,6 @@ public class Destructable : MonoBehaviour, IDamagable {
 		if (health <= 0) {
 			destroyed = true;
 			if (destroyPrefab != null) Instantiate(destroyPrefab, transform.position, Quaternion.identity);
-
 			Destroy(gameObject);
 		} else {
 			if (hitPrefab != null) Instantiate(hitPrefab, transform.position, Quaternion.identity);

@@ -28,13 +28,7 @@ public class PlayerShip : MonoBehaviour, IDamagable {
 
 	void Start () {
 		respawnEvent.Subscribe(respawn);
-
-        health.value = 100;
-		score.value = 0;
-		lives.value = 3;
-		healthSlider.value = health.value;
-		scoreText.text = "Score: " + score.value;
-		livesText.text = "Lives: " + lives.value;
+		gameStartEvent.Subscribe(startGame);
     }
 
     void Update() {
@@ -91,5 +85,14 @@ public class PlayerShip : MonoBehaviour, IDamagable {
 			health.value = 100;
 			respawn(respawnObj);
 		}
+	}
+
+	public void startGame() {
+		health.value = 100;
+		score.value = 0;
+		lives.value = 3;
+		healthSlider.value = health.value;
+		scoreText.text = "Score: " + score.value;
+		livesText.text = "Lives: " + lives.value;
 	}
 }
