@@ -40,7 +40,7 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	private int lives = 3;
+	private int lives = 9;
 	public int Lives {
 		get { return lives; }
 		set { lives = value;
@@ -92,7 +92,7 @@ public class Player : MonoBehaviour {
     }
 
     void onStartGame() {
-		Lives = 3;
+		Lives = 9;
 		Health = 100;
 		Score = 0;
 		Timer = 60;
@@ -104,6 +104,7 @@ public class Player : MonoBehaviour {
         transform.position = respawn.transform.position;
         transform.rotation = respawn.transform.rotation;
         characterController.Reset();
+        moreTime(30f);
     }
 
     public void Damage(float damage) { 

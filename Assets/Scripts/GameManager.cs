@@ -13,6 +13,7 @@ public class GameManager : Singleton<GameManager> {
     [SerializeField] AudioSource gameoverSound;
     [SerializeField] AudioSource gamewinSound;
     [SerializeField] AudioSource titleSound;
+    [SerializeField] RespawnPoints respawnThing;
 
     [Header("Events")]
     [SerializeField] VoidEvent gameStartEvent;
@@ -56,6 +57,8 @@ public class GameManager : Singleton<GameManager> {
                 gamewonUI.SetActive(false);
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
+                respawnThing.point = 0;
+                respawnThing.newRespawn();
                 gameStartEvent.RaiseEvent();
                 state = State.PLAY_GAME;
                 if (!playSound.isPlaying) {

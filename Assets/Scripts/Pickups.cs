@@ -12,6 +12,7 @@ public class Pickups : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
+		print("pick up collider happened");
 		if (other.gameObject.TryGetComponent(out PlayerShip player)) {
 			switch (pickupType) {
 				case "score":

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8555460525781088741}
   - component: {fileID: 6190546526417342648}
   - component: {fileID: 9144290294129759354}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TreasureAsteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

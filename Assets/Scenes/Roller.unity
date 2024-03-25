@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4660946, g: 0.46579224, b: 0.46188897, a: 1}
+  m_IndirectSpecularColor: {r: 0.24379471, g: 0.2497297, b: 0.25209993, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lives: 3'
+  m_text: 'Lives: 9'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -463,8 +463,8 @@ GameObject:
   - component: {fileID: 32788695}
   - component: {fileID: 32788694}
   - component: {fileID: 32788693}
-  - component: {fileID: 32788692}
   - component: {fileID: 32788691}
+  - component: {fileID: 32788697}
   m_Layer: 0
   m_Name: Hurt (28)
   m_TagString: Untagged
@@ -508,20 +508,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &32788692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32788689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &32788693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,6 +595,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32788689}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &32788697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32788689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &41458286
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,8 +802,8 @@ GameObject:
   - component: {fileID: 77146089}
   - component: {fileID: 77146088}
   - component: {fileID: 77146087}
-  - component: {fileID: 77146086}
   - component: {fileID: 77146085}
+  - component: {fileID: 77146091}
   m_Layer: 0
   m_Name: Hurt (35)
   m_TagString: Untagged
@@ -847,20 +847,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &77146086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77146083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &77146087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,6 +934,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77146083}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &77146091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77146083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &110409972
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,8 +997,8 @@ GameObject:
   - component: {fileID: 120891684}
   - component: {fileID: 120891683}
   - component: {fileID: 120891682}
-  - component: {fileID: 120891681}
   - component: {fileID: 120891680}
+  - component: {fileID: 120891686}
   m_Layer: 0
   m_Name: Hurt (33)
   m_TagString: Untagged
@@ -1042,20 +1042,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &120891681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120891678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &120891682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1143,6 +1129,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120891678}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &120891686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120891678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &131844397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,8 +1614,8 @@ GameObject:
   - component: {fileID: 174618482}
   - component: {fileID: 174618481}
   - component: {fileID: 174618480}
-  - component: {fileID: 174618479}
   - component: {fileID: 174618478}
+  - component: {fileID: 174618484}
   m_Layer: 0
   m_Name: Hurt (57)
   m_TagString: Untagged
@@ -1659,20 +1659,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &174618479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174618476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &174618480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1760,6 +1746,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174618476}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &174618484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174618476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &175858693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2529,8 +2529,8 @@ GameObject:
   - component: {fileID: 295605024}
   - component: {fileID: 295605023}
   - component: {fileID: 295605022}
-  - component: {fileID: 295605021}
   - component: {fileID: 295605020}
+  - component: {fileID: 295605026}
   m_Layer: 0
   m_Name: Hurt (15)
   m_TagString: Untagged
@@ -2574,20 +2574,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &295605021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295605018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &295605022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2675,6 +2661,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295605018}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &295605026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295605018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &297601681
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,7 +3030,7 @@ GameObject:
   - component: {fileID: 338742039}
   - component: {fileID: 338742038}
   - component: {fileID: 338742037}
-  - component: {fileID: 338742035}
+  - component: {fileID: 338742040}
   m_Layer: 0
   m_Name: Hurt (61)
   m_TagString: Untagged
@@ -3053,20 +3053,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1670442593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &338742035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338742033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 9
-  oneTime: 0
 --- !u!65 &338742037
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3138,6 +3124,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338742033}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &338742040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338742033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0.1
+  damageOverTime: 1
 --- !u!1 &341774389
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,8 +3151,8 @@ GameObject:
   - component: {fileID: 341774395}
   - component: {fileID: 341774394}
   - component: {fileID: 341774393}
-  - component: {fileID: 341774392}
   - component: {fileID: 341774391}
+  - component: {fileID: 341774397}
   m_Layer: 0
   m_Name: Hurt (5)
   m_TagString: Untagged
@@ -3196,20 +3196,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &341774392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341774389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &341774393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3297,6 +3283,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341774389}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &341774397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341774389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!43 &346069664
 Mesh:
   m_ObjectHideFlags: 0
@@ -3496,9 +3496,9 @@ RectTransform:
   - {fileID: 1785874431}
   m_Father: {fileID: 2087453743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 326, y: 207.8}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -76.16, y: -42.56}
   m_SizeDelta: {x: 141.9599, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &351062728
@@ -3565,8 +3565,8 @@ GameObject:
   - component: {fileID: 355829483}
   - component: {fileID: 355829482}
   - component: {fileID: 355829481}
-  - component: {fileID: 355829480}
   - component: {fileID: 355829479}
+  - component: {fileID: 355829485}
   m_Layer: 0
   m_Name: Hurt (47)
   m_TagString: Untagged
@@ -3610,20 +3610,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &355829480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355829477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &355829481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3711,6 +3697,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355829477}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &355829485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355829477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!4 &372018865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4249966322744593578, guid: 363f76beada5c9441854e89680dd4f46, type: 3}
@@ -3729,8 +3729,8 @@ GameObject:
   - component: {fileID: 379178050}
   - component: {fileID: 379178049}
   - component: {fileID: 379178048}
-  - component: {fileID: 379178047}
   - component: {fileID: 379178046}
+  - component: {fileID: 379178052}
   m_Layer: 0
   m_Name: Hurt (34)
   m_TagString: Untagged
@@ -3774,20 +3774,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &379178047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379178044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &379178048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3875,6 +3861,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379178044}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &379178052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379178044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &384581201
 GameObject:
   m_ObjectHideFlags: 0
@@ -4011,13 +4011,43 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3518022972560257738, guid: b92451d8201b4fe4faf48b95d47230dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 397162104}
   m_SourcePrefab: {fileID: 100100000, guid: b92451d8201b4fe4faf48b95d47230dd, type: 3}
 --- !u!1 &397162102 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3518022972560257738, guid: b92451d8201b4fe4faf48b95d47230dd, type: 3}
   m_PrefabInstance: {fileID: 397162101}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &397162103 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3422161731099269636, guid: b92451d8201b4fe4faf48b95d47230dd, type: 3}
+  m_PrefabInstance: {fileID: 397162101}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &397162104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397162102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9374c2123d33cc640b729eca1ad05ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 16, z: 22}
+  - {x: 0, y: 16, z: 62}
+  - {x: 0, y: 16, z: 85}
+  - {x: 24, y: 16, z: 80}
+  - {x: 24, y: 16, z: 52}
+  - {x: 24, y: 6, z: 18}
+  point: 0
+  respawnTransform: {fileID: 397162103}
 --- !u!1 &416173654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4125,8 +4155,8 @@ GameObject:
   - component: {fileID: 417186196}
   - component: {fileID: 417186195}
   - component: {fileID: 417186194}
-  - component: {fileID: 417186193}
   - component: {fileID: 417186192}
+  - component: {fileID: 417186198}
   m_Layer: 0
   m_Name: Hurt (8)
   m_TagString: Untagged
@@ -4170,20 +4200,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &417186193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417186190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &417186194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4271,6 +4287,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417186190}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &417186198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417186190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &434176815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4648,8 +4678,8 @@ GameObject:
   - component: {fileID: 447422099}
   - component: {fileID: 447422098}
   - component: {fileID: 447422097}
-  - component: {fileID: 447422096}
   - component: {fileID: 447422095}
+  - component: {fileID: 447422101}
   m_Layer: 0
   m_Name: Hurt (39)
   m_TagString: Untagged
@@ -4693,20 +4723,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &447422096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447422093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &447422097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4794,6 +4810,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447422093}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &447422101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447422093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &449669204
 GameObject:
   m_ObjectHideFlags: 0
@@ -4807,8 +4837,8 @@ GameObject:
   - component: {fileID: 449669210}
   - component: {fileID: 449669209}
   - component: {fileID: 449669208}
-  - component: {fileID: 449669207}
   - component: {fileID: 449669206}
+  - component: {fileID: 449669212}
   m_Layer: 0
   m_Name: Hurt (40)
   m_TagString: Untagged
@@ -4852,20 +4882,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &449669207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449669204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &449669208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4953,6 +4969,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449669204}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &449669212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449669204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &453823355
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,8 +5268,8 @@ GameObject:
   - component: {fileID: 459404101}
   - component: {fileID: 459404100}
   - component: {fileID: 459404099}
-  - component: {fileID: 459404098}
   - component: {fileID: 459404097}
+  - component: {fileID: 459404103}
   m_Layer: 0
   m_Name: Hurt (29)
   m_TagString: Untagged
@@ -5283,20 +5313,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &459404098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459404095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &459404099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5384,6 +5400,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459404095}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &459404103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459404095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &465223603
 GameObject:
   m_ObjectHideFlags: 0
@@ -5802,8 +5832,8 @@ GameObject:
   - component: {fileID: 471774408}
   - component: {fileID: 471774407}
   - component: {fileID: 471774406}
-  - component: {fileID: 471774405}
   - component: {fileID: 471774410}
+  - component: {fileID: 471774411}
   m_Layer: 0
   m_Name: Hurt
   m_TagString: Untagged
@@ -5826,20 +5856,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1670442593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &471774405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471774403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &471774406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5948,6 +5964,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &471774411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471774403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &479697896
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,7 +5990,7 @@ GameObject:
   - component: {fileID: 479697901}
   - component: {fileID: 479697900}
   - component: {fileID: 479697899}
-  - component: {fileID: 479697898}
+  - component: {fileID: 479697902}
   m_Layer: 0
   m_Name: Death
   m_TagString: Untagged
@@ -5978,25 +6008,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.5928, y: -3, z: 50.2288}
-  m_LocalScale: {x: 70.69428, y: 0.1, z: 161.17923}
+  m_LocalScale: {x: 105.2, y: 0.1, z: 203.68}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1670442593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &479697898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479697896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 999
-  oneTime: 1
 --- !u!65 &479697899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6068,6 +6084,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479697896}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &479697902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479697896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 999
+  damageOverTime: 0
 --- !u!1 &490082163
 GameObject:
   m_ObjectHideFlags: 0
@@ -6116,8 +6146,8 @@ GameObject:
   - component: {fileID: 501324736}
   - component: {fileID: 501324735}
   - component: {fileID: 501324734}
-  - component: {fileID: 501324733}
   - component: {fileID: 501324732}
+  - component: {fileID: 501324738}
   m_Layer: 0
   m_Name: Hurt (37)
   m_TagString: Untagged
@@ -6161,20 +6191,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &501324733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501324730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &501324734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6262,6 +6278,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501324730}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &501324738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501324730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &511713504
 GameObject:
   m_ObjectHideFlags: 0
@@ -7226,8 +7256,8 @@ GameObject:
   - component: {fileID: 610528947}
   - component: {fileID: 610528946}
   - component: {fileID: 610528945}
-  - component: {fileID: 610528944}
   - component: {fileID: 610528943}
+  - component: {fileID: 610528949}
   m_Layer: 0
   m_Name: Hurt (53)
   m_TagString: Untagged
@@ -7271,20 +7301,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &610528944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610528941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &610528945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7372,6 +7388,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610528941}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &610528949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610528941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &625247686
 GameObject:
   m_ObjectHideFlags: 0
@@ -7385,8 +7415,8 @@ GameObject:
   - component: {fileID: 625247692}
   - component: {fileID: 625247691}
   - component: {fileID: 625247690}
-  - component: {fileID: 625247689}
   - component: {fileID: 625247688}
+  - component: {fileID: 625247694}
   m_Layer: 0
   m_Name: Hurt (7)
   m_TagString: Untagged
@@ -7430,20 +7460,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &625247689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625247686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &625247690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7531,6 +7547,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625247686}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &625247694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625247686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &635784446
 GameObject:
   m_ObjectHideFlags: 0
@@ -8023,8 +8053,8 @@ GameObject:
   - component: {fileID: 683038531}
   - component: {fileID: 683038530}
   - component: {fileID: 683038529}
-  - component: {fileID: 683038528}
   - component: {fileID: 683038527}
+  - component: {fileID: 683038533}
   m_Layer: 0
   m_Name: Hurt (56)
   m_TagString: Untagged
@@ -8068,20 +8098,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &683038528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683038525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &683038529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8169,6 +8185,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683038525}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &683038533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683038525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &685171725
 GameObject:
   m_ObjectHideFlags: 0
@@ -8663,8 +8693,8 @@ GameObject:
   - component: {fileID: 721745116}
   - component: {fileID: 721745115}
   - component: {fileID: 721745114}
-  - component: {fileID: 721745113}
   - component: {fileID: 721745112}
+  - component: {fileID: 721745118}
   m_Layer: 0
   m_Name: Hurt (14)
   m_TagString: Untagged
@@ -8708,20 +8738,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &721745113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721745110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &721745114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8809,6 +8825,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721745110}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &721745118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721745110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &768014585
 GameObject:
   m_ObjectHideFlags: 0
@@ -9034,7 +9064,7 @@ GameObject:
   - component: {fileID: 773766484}
   - component: {fileID: 773766483}
   - component: {fileID: 773766482}
-  - component: {fileID: 773766481}
+  - component: {fileID: 773766486}
   m_Layer: 0
   m_Name: Hurt (60)
   m_TagString: Untagged
@@ -9057,20 +9087,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1670442593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &773766481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773766479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 50
-  oneTime: 1
 --- !u!95 &773766482
 Animator:
   serializedVersion: 5
@@ -9163,6 +9179,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773766479}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &773766486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773766479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
+  damageOverTime: 0
 --- !u!1 &787965631
 GameObject:
   m_ObjectHideFlags: 0
@@ -9299,6 +9329,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787965631}
   m_CullTransparentMesh: 1
+--- !u!1 &794133071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 794133072}
+  - component: {fileID: 794133077}
+  - component: {fileID: 794133076}
+  - component: {fileID: 794133075}
+  - component: {fileID: 794133074}
+  - component: {fileID: 794133073}
+  m_Layer: 0
+  m_Name: TimePickUp (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &794133072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794133071}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.88, y: 15.61, z: 63.48}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 973647381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &794133073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794133071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fe94edae38f7440acd21e6efcee4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rate: 3
+  amplitude: 0.3
+--- !u!114 &794133074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794133071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327e2140c24fe6f4fb2cd96f5bdf10bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupPrefab: {fileID: 1804206099813350, guid: 4dd02b5f854b6c84990fbeb810abffe4, type: 3}
+  pickupType: time
+  points: 30
+--- !u!135 &794133075
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794133071}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &794133076
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794133071}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9540523183906414bb8fecaaddc7be69, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &794133077
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794133071}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &803115098
 GameObject:
   m_ObjectHideFlags: 0
@@ -9312,8 +9478,8 @@ GameObject:
   - component: {fileID: 803115104}
   - component: {fileID: 803115103}
   - component: {fileID: 803115102}
-  - component: {fileID: 803115101}
   - component: {fileID: 803115100}
+  - component: {fileID: 803115106}
   m_Layer: 0
   m_Name: Hurt (45)
   m_TagString: Untagged
@@ -9357,20 +9523,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &803115101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803115098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &803115102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9458,6 +9610,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803115098}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &803115106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803115098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &805827004
 GameObject:
   m_ObjectHideFlags: 0
@@ -9834,6 +10000,7 @@ GameObject:
   - component: {fileID: 848530912}
   - component: {fileID: 848530911}
   - component: {fileID: 848530910}
+  - component: {fileID: 848530913}
   m_Layer: 3
   m_Name: Ground (6)
   m_TagString: Untagged
@@ -9927,6 +10094,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848530908}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &848530913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848530908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e02def5b347e164c90f323de5293ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 3
+  points: {fileID: 397162104}
 --- !u!1 &861812512
 GameObject:
   m_ObjectHideFlags: 0
@@ -9940,8 +10121,8 @@ GameObject:
   - component: {fileID: 861812518}
   - component: {fileID: 861812517}
   - component: {fileID: 861812516}
-  - component: {fileID: 861812515}
   - component: {fileID: 861812514}
+  - component: {fileID: 861812520}
   m_Layer: 0
   m_Name: Hurt (19)
   m_TagString: Untagged
@@ -9985,20 +10166,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &861812515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861812512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &861812516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10086,6 +10253,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861812512}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &861812520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861812512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &866717298
 GameObject:
   m_ObjectHideFlags: 0
@@ -10257,6 +10438,7 @@ MonoBehaviour:
   gameoverSound: {fileID: 1312636339}
   gamewinSound: {fileID: 565919173}
   titleSound: {fileID: 215742142}
+  respawnThing: {fileID: 397162104}
   gameStartEvent: {fileID: 11400000, guid: ef64915fd1a23314d93227426e1dd853, type: 2}
   gameOverEvent: {fileID: 11400000, guid: c629b0296d6d1b8488456cc15736e207, type: 2}
   gameWonEvent: {fileID: 11400000, guid: 3eb35a44151083b469df4a9982bb9aa6, type: 2}
@@ -10467,8 +10649,8 @@ GameObject:
   - component: {fileID: 937341080}
   - component: {fileID: 937341079}
   - component: {fileID: 937341078}
-  - component: {fileID: 937341077}
   - component: {fileID: 937341076}
+  - component: {fileID: 937341082}
   m_Layer: 0
   m_Name: Hurt (12)
   m_TagString: Untagged
@@ -10512,20 +10694,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &937341077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937341074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &937341078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10613,6 +10781,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937341074}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &937341082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937341074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &973647380
 GameObject:
   m_ObjectHideFlags: 0
@@ -10646,6 +10828,10 @@ Transform:
   - {fileID: 1572080012}
   - {fileID: 453823356}
   - {fileID: 1554613688}
+  - {fileID: 1370373875}
+  - {fileID: 1259291979}
+  - {fileID: 794133072}
+  - {fileID: 981281321}
   - {fileID: 467190950}
   - {fileID: 1493046344}
   - {fileID: 1216202618}
@@ -10666,6 +10852,142 @@ Transform:
   - {fileID: 1882924802}
   m_Father: {fileID: 538833924}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &981281320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981281321}
+  - component: {fileID: 981281326}
+  - component: {fileID: 981281325}
+  - component: {fileID: 981281324}
+  - component: {fileID: 981281323}
+  - component: {fileID: 981281322}
+  m_Layer: 0
+  m_Name: TimePickUp (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &981281321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981281320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.64, y: 15.61, z: 60.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 973647381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981281322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981281320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fe94edae38f7440acd21e6efcee4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rate: 3
+  amplitude: 0.3
+--- !u!114 &981281323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981281320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327e2140c24fe6f4fb2cd96f5bdf10bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupPrefab: {fileID: 1804206099813350, guid: 4dd02b5f854b6c84990fbeb810abffe4, type: 3}
+  pickupType: time
+  points: 30
+--- !u!135 &981281324
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981281320}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &981281325
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981281320}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9540523183906414bb8fecaaddc7be69, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &981281326
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981281320}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1008843893
 GameObject:
   m_ObjectHideFlags: 0
@@ -10679,8 +11001,8 @@ GameObject:
   - component: {fileID: 1008843899}
   - component: {fileID: 1008843898}
   - component: {fileID: 1008843897}
-  - component: {fileID: 1008843896}
   - component: {fileID: 1008843895}
+  - component: {fileID: 1008843901}
   m_Layer: 0
   m_Name: Hurt (21)
   m_TagString: Untagged
@@ -10724,20 +11046,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1008843896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008843893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1008843897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10825,6 +11133,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008843893}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1008843901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008843893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1009603970
 GameObject:
   m_ObjectHideFlags: 0
@@ -10973,6 +11295,7 @@ GameObject:
   - component: {fileID: 1011669342}
   - component: {fileID: 1011669341}
   - component: {fileID: 1011669340}
+  - component: {fileID: 1011669343}
   m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
@@ -11066,6 +11389,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011669338}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1011669343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011669338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e02def5b347e164c90f323de5293ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 0
+  points: {fileID: 397162104}
 --- !u!1 &1039995724
 GameObject:
   m_ObjectHideFlags: 0
@@ -11079,8 +11416,8 @@ GameObject:
   - component: {fileID: 1039995730}
   - component: {fileID: 1039995729}
   - component: {fileID: 1039995728}
-  - component: {fileID: 1039995727}
   - component: {fileID: 1039995726}
+  - component: {fileID: 1039995732}
   m_Layer: 0
   m_Name: Hurt (32)
   m_TagString: Untagged
@@ -11124,20 +11461,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1039995727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039995724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1039995728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11225,6 +11548,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039995724}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1039995732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039995724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1047958321
 GameObject:
   m_ObjectHideFlags: 0
@@ -11332,8 +11669,8 @@ GameObject:
   - component: {fileID: 1051156155}
   - component: {fileID: 1051156154}
   - component: {fileID: 1051156153}
-  - component: {fileID: 1051156152}
   - component: {fileID: 1051156151}
+  - component: {fileID: 1051156157}
   m_Layer: 0
   m_Name: Hurt (13)
   m_TagString: Untagged
@@ -11377,20 +11714,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1051156152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1051156149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1051156153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11478,6 +11801,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051156149}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1051156157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051156149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1051966475
 GameObject:
   m_ObjectHideFlags: 0
@@ -11762,6 +12099,7 @@ GameObject:
   - component: {fileID: 1083182648}
   - component: {fileID: 1083182647}
   - component: {fileID: 1083182646}
+  - component: {fileID: 1083182649}
   m_Layer: 3
   m_Name: Ground (3)
   m_TagString: Untagged
@@ -11855,6 +12193,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083182644}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1083182649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083182644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e02def5b347e164c90f323de5293ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 1
+  points: {fileID: 397162104}
 --- !u!1 &1090581014
 GameObject:
   m_ObjectHideFlags: 0
@@ -11907,8 +12259,8 @@ GameObject:
   - component: {fileID: 1095396461}
   - component: {fileID: 1095396460}
   - component: {fileID: 1095396459}
-  - component: {fileID: 1095396458}
   - component: {fileID: 1095396457}
+  - component: {fileID: 1095396463}
   m_Layer: 0
   m_Name: Hurt (41)
   m_TagString: Untagged
@@ -11952,20 +12304,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1095396458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095396455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1095396459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12053,6 +12391,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095396455}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1095396463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095396455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1115852296
 GameObject:
   m_ObjectHideFlags: 0
@@ -12066,8 +12418,8 @@ GameObject:
   - component: {fileID: 1115852302}
   - component: {fileID: 1115852301}
   - component: {fileID: 1115852300}
-  - component: {fileID: 1115852299}
   - component: {fileID: 1115852298}
+  - component: {fileID: 1115852304}
   m_Layer: 0
   m_Name: Hurt (48)
   m_TagString: Untagged
@@ -12111,20 +12463,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1115852299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115852296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1115852300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12212,6 +12550,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115852296}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1115852304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115852296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1133039799
 GameObject:
   m_ObjectHideFlags: 0
@@ -13065,8 +13417,8 @@ GameObject:
   - component: {fileID: 1143489819}
   - component: {fileID: 1143489818}
   - component: {fileID: 1143489817}
-  - component: {fileID: 1143489816}
   - component: {fileID: 1143489815}
+  - component: {fileID: 1143489821}
   m_Layer: 0
   m_Name: Hurt (26)
   m_TagString: Untagged
@@ -13110,20 +13462,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1143489816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143489813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1143489817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13211,6 +13549,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143489813}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1143489821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143489813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1164309102
 GameObject:
   m_ObjectHideFlags: 0
@@ -13853,8 +14205,8 @@ GameObject:
   - component: {fileID: 1223595162}
   - component: {fileID: 1223595161}
   - component: {fileID: 1223595160}
-  - component: {fileID: 1223595159}
   - component: {fileID: 1223595158}
+  - component: {fileID: 1223595164}
   m_Layer: 0
   m_Name: Hurt (27)
   m_TagString: Untagged
@@ -13898,20 +14250,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1223595159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223595156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1223595160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13999,6 +14337,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223595156}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1223595164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223595156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1225041140
 GameObject:
   m_ObjectHideFlags: 0
@@ -14012,8 +14364,8 @@ GameObject:
   - component: {fileID: 1225041146}
   - component: {fileID: 1225041145}
   - component: {fileID: 1225041144}
-  - component: {fileID: 1225041143}
   - component: {fileID: 1225041142}
+  - component: {fileID: 1225041148}
   m_Layer: 0
   m_Name: Hurt (54)
   m_TagString: Untagged
@@ -14057,20 +14409,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1225041143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225041140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1225041144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14158,6 +14496,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225041140}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1225041148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225041140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1227834789 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 188505653098987904, guid: 363f76beada5c9441854e89680dd4f46, type: 3}
@@ -14202,8 +14554,8 @@ GameObject:
   - component: {fileID: 1231391337}
   - component: {fileID: 1231391336}
   - component: {fileID: 1231391335}
-  - component: {fileID: 1231391334}
   - component: {fileID: 1231391333}
+  - component: {fileID: 1231391339}
   m_Layer: 0
   m_Name: Hurt (22)
   m_TagString: Untagged
@@ -14247,20 +14599,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1231391334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231391331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1231391335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14348,6 +14686,156 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231391331}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1231391339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231391331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
+--- !u!1 &1259291978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259291979}
+  - component: {fileID: 1259291984}
+  - component: {fileID: 1259291983}
+  - component: {fileID: 1259291982}
+  - component: {fileID: 1259291981}
+  - component: {fileID: 1259291980}
+  m_Layer: 0
+  m_Name: TimePickUp (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1259291979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291978}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.52, y: 15.61, z: 66.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 973647381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1259291980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fe94edae38f7440acd21e6efcee4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rate: 3
+  amplitude: 0.3
+--- !u!114 &1259291981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327e2140c24fe6f4fb2cd96f5bdf10bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupPrefab: {fileID: 1804206099813350, guid: 4dd02b5f854b6c84990fbeb810abffe4, type: 3}
+  pickupType: time
+  points: 30
+--- !u!135 &1259291982
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291978}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1259291983
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291978}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9540523183906414bb8fecaaddc7be69, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1259291984
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291978}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1276768993
 GameObject:
   m_ObjectHideFlags: 0
@@ -14360,6 +14848,7 @@ GameObject:
   - component: {fileID: 1276768997}
   - component: {fileID: 1276768996}
   - component: {fileID: 1276768995}
+  - component: {fileID: 1276768998}
   m_Layer: 3
   m_Name: Ground (5)
   m_TagString: Untagged
@@ -14453,6 +14942,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276768993}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1276768998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276768993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e02def5b347e164c90f323de5293ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 2
+  points: {fileID: 397162104}
 --- !u!1 &1277701677
 GameObject:
   m_ObjectHideFlags: 0
@@ -14466,8 +14969,8 @@ GameObject:
   - component: {fileID: 1277701683}
   - component: {fileID: 1277701682}
   - component: {fileID: 1277701681}
-  - component: {fileID: 1277701680}
   - component: {fileID: 1277701679}
+  - component: {fileID: 1277701685}
   m_Layer: 0
   m_Name: Hurt (50)
   m_TagString: Untagged
@@ -14511,20 +15014,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1277701680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277701677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1277701681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14612,6 +15101,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277701677}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1277701685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277701677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1290431215
 GameObject:
   m_ObjectHideFlags: 0
@@ -14994,8 +15497,8 @@ GameObject:
   - component: {fileID: 1314854917}
   - component: {fileID: 1314854916}
   - component: {fileID: 1314854915}
-  - component: {fileID: 1314854914}
   - component: {fileID: 1314854913}
+  - component: {fileID: 1314854919}
   m_Layer: 0
   m_Name: Hurt (1)
   m_TagString: Untagged
@@ -15039,20 +15542,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1314854914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314854911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1314854915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15140,6 +15629,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314854911}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1314854919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314854911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1331920503
 GameObject:
   m_ObjectHideFlags: 0
@@ -15153,8 +15656,8 @@ GameObject:
   - component: {fileID: 1331920509}
   - component: {fileID: 1331920508}
   - component: {fileID: 1331920507}
-  - component: {fileID: 1331920506}
   - component: {fileID: 1331920505}
+  - component: {fileID: 1331920511}
   m_Layer: 0
   m_Name: Hurt (23)
   m_TagString: Untagged
@@ -15198,20 +15701,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1331920506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331920503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1331920507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15299,6 +15788,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331920503}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1331920511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331920503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1339463987
 GameObject:
   m_ObjectHideFlags: 0
@@ -15312,8 +15815,8 @@ GameObject:
   - component: {fileID: 1339463993}
   - component: {fileID: 1339463992}
   - component: {fileID: 1339463991}
-  - component: {fileID: 1339463990}
   - component: {fileID: 1339463989}
+  - component: {fileID: 1339463995}
   m_Layer: 0
   m_Name: Hurt (55)
   m_TagString: Untagged
@@ -15357,20 +15860,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1339463990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339463987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1339463991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15458,6 +15947,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339463987}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1339463995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339463987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1345883261
 GameObject:
   m_ObjectHideFlags: 0
@@ -15576,8 +16079,8 @@ GameObject:
   - component: {fileID: 1346682538}
   - component: {fileID: 1346682537}
   - component: {fileID: 1346682536}
-  - component: {fileID: 1346682535}
   - component: {fileID: 1346682534}
+  - component: {fileID: 1346682540}
   m_Layer: 0
   m_Name: Hurt (25)
   m_TagString: Untagged
@@ -15621,20 +16124,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1346682535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346682532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1346682536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15722,6 +16211,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346682532}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1346682540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346682532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1350306387
 GameObject:
   m_ObjectHideFlags: 0
@@ -16142,6 +16645,142 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 315e5843fa222c64c8b16aa1879d0ca5, type: 3}
+--- !u!1 &1370373874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1370373875}
+  - component: {fileID: 1370373880}
+  - component: {fileID: 1370373879}
+  - component: {fileID: 1370373878}
+  - component: {fileID: 1370373877}
+  - component: {fileID: 1370373876}
+  m_Layer: 0
+  m_Name: TimePickUp (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1370373875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370373874}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.49, y: 15.61, z: 70.98}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 973647381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1370373876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370373874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fe94edae38f7440acd21e6efcee4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rate: 3
+  amplitude: 0.3
+--- !u!114 &1370373877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370373874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327e2140c24fe6f4fb2cd96f5bdf10bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupPrefab: {fileID: 1804206099813350, guid: 4dd02b5f854b6c84990fbeb810abffe4, type: 3}
+  pickupType: time
+  points: 30
+--- !u!135 &1370373878
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370373874}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1370373879
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370373874}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9540523183906414bb8fecaaddc7be69, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1370373880
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370373874}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1374224206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7857347377259054150, guid: 315e5843fa222c64c8b16aa1879d0ca5, type: 3}
@@ -16160,8 +16799,8 @@ GameObject:
   - component: {fileID: 1379787574}
   - component: {fileID: 1379787573}
   - component: {fileID: 1379787572}
-  - component: {fileID: 1379787571}
   - component: {fileID: 1379787570}
+  - component: {fileID: 1379787576}
   m_Layer: 0
   m_Name: Hurt (11)
   m_TagString: Untagged
@@ -16205,20 +16844,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1379787571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379787568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1379787572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16306,6 +16931,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379787568}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1379787576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379787568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1387892028
 GameObject:
   m_ObjectHideFlags: 0
@@ -16574,8 +17213,8 @@ GameObject:
   - component: {fileID: 1404787072}
   - component: {fileID: 1404787071}
   - component: {fileID: 1404787070}
-  - component: {fileID: 1404787069}
   - component: {fileID: 1404787068}
+  - component: {fileID: 1404787074}
   m_Layer: 0
   m_Name: Hurt (16)
   m_TagString: Untagged
@@ -16619,20 +17258,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1404787069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404787066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1404787070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16720,6 +17345,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404787066}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1404787074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404787066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1408333476
 GameObject:
   m_ObjectHideFlags: 0
@@ -16869,8 +17508,8 @@ GameObject:
   - component: {fileID: 1413122969}
   - component: {fileID: 1413122968}
   - component: {fileID: 1413122967}
-  - component: {fileID: 1413122966}
   - component: {fileID: 1413122965}
+  - component: {fileID: 1413122971}
   m_Layer: 0
   m_Name: Hurt (43)
   m_TagString: Untagged
@@ -16914,20 +17553,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1413122966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413122963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1413122967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17015,6 +17640,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413122963}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1413122971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413122963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1439761269
 GameObject:
   m_ObjectHideFlags: 0
@@ -17164,8 +17803,8 @@ GameObject:
   - component: {fileID: 1452119488}
   - component: {fileID: 1452119487}
   - component: {fileID: 1452119486}
-  - component: {fileID: 1452119485}
   - component: {fileID: 1452119484}
+  - component: {fileID: 1452119490}
   m_Layer: 0
   m_Name: Hurt (18)
   m_TagString: Untagged
@@ -17209,20 +17848,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1452119485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452119482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1452119486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17310,6 +17935,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452119482}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1452119490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452119482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1461065905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5694297149030064247, guid: 315e5843fa222c64c8b16aa1879d0ca5, type: 3}
@@ -17881,8 +18520,8 @@ GameObject:
   - component: {fileID: 1522905194}
   - component: {fileID: 1522905193}
   - component: {fileID: 1522905192}
-  - component: {fileID: 1522905191}
   - component: {fileID: 1522905190}
+  - component: {fileID: 1522905196}
   m_Layer: 0
   m_Name: Hurt (9)
   m_TagString: Untagged
@@ -17926,20 +18565,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1522905191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522905188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1522905192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18027,6 +18652,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522905188}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1522905196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522905188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1546472952
 GameObject:
   m_ObjectHideFlags: 0
@@ -18417,8 +19056,8 @@ GameObject:
   - component: {fileID: 1578307563}
   - component: {fileID: 1578307562}
   - component: {fileID: 1578307561}
-  - component: {fileID: 1578307560}
   - component: {fileID: 1578307559}
+  - component: {fileID: 1578307565}
   m_Layer: 0
   m_Name: Hurt (10)
   m_TagString: Untagged
@@ -18462,20 +19101,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1578307560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578307557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1578307561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18563,6 +19188,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578307557}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1578307565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578307557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1581519834
 GameObject:
   m_ObjectHideFlags: 0
@@ -18880,8 +19519,8 @@ GameObject:
   - component: {fileID: 1608151588}
   - component: {fileID: 1608151587}
   - component: {fileID: 1608151586}
-  - component: {fileID: 1608151585}
   - component: {fileID: 1608151584}
+  - component: {fileID: 1608151590}
   m_Layer: 0
   m_Name: Hurt (30)
   m_TagString: Untagged
@@ -18925,20 +19564,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1608151585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608151582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1608151586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19026,6 +19651,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608151582}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1608151590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608151582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1610392061
 GameObject:
   m_ObjectHideFlags: 0
@@ -19039,8 +19678,8 @@ GameObject:
   - component: {fileID: 1610392067}
   - component: {fileID: 1610392066}
   - component: {fileID: 1610392065}
-  - component: {fileID: 1610392064}
   - component: {fileID: 1610392063}
+  - component: {fileID: 1610392069}
   m_Layer: 0
   m_Name: Hurt (36)
   m_TagString: Untagged
@@ -19084,20 +19723,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1610392064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610392061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1610392065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19185,6 +19810,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610392061}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1610392069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610392061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1617379934
 GameObject:
   m_ObjectHideFlags: 0
@@ -19197,6 +19836,7 @@ GameObject:
   - component: {fileID: 1617379938}
   - component: {fileID: 1617379937}
   - component: {fileID: 1617379936}
+  - component: {fileID: 1617379939}
   m_Layer: 3
   m_Name: Ground (12)
   m_TagString: Untagged
@@ -19290,6 +19930,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617379934}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1617379939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617379934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e02def5b347e164c90f323de5293ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 6
+  points: {fileID: 397162104}
 --- !u!1 &1618221073
 GameObject:
   m_ObjectHideFlags: 0
@@ -19488,8 +20142,8 @@ GameObject:
   - component: {fileID: 1652056711}
   - component: {fileID: 1652056710}
   - component: {fileID: 1652056709}
-  - component: {fileID: 1652056708}
   - component: {fileID: 1652056707}
+  - component: {fileID: 1652056713}
   m_Layer: 0
   m_Name: Hurt (4)
   m_TagString: Untagged
@@ -19533,20 +20187,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1652056708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652056705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1652056709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19634,6 +20274,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652056705}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1652056713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652056705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1668209324
 GameObject:
   m_ObjectHideFlags: 0
@@ -19647,8 +20301,8 @@ GameObject:
   - component: {fileID: 1668209330}
   - component: {fileID: 1668209329}
   - component: {fileID: 1668209328}
-  - component: {fileID: 1668209327}
   - component: {fileID: 1668209326}
+  - component: {fileID: 1668209332}
   m_Layer: 0
   m_Name: Hurt (6)
   m_TagString: Untagged
@@ -19692,20 +20346,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1668209327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668209324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1668209328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19793,6 +20433,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668209324}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1668209332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668209324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1670221464
 GameObject:
   m_ObjectHideFlags: 0
@@ -20032,8 +20686,8 @@ GameObject:
   - component: {fileID: 1670623683}
   - component: {fileID: 1670623682}
   - component: {fileID: 1670623681}
-  - component: {fileID: 1670623680}
   - component: {fileID: 1670623679}
+  - component: {fileID: 1670623685}
   m_Layer: 0
   m_Name: Hurt (3)
   m_TagString: Untagged
@@ -20077,20 +20731,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1670623680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670623677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1670623681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20178,6 +20818,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670623677}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1670623685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670623677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1675731228
 GameObject:
   m_ObjectHideFlags: 0
@@ -20190,6 +20844,7 @@ GameObject:
   - component: {fileID: 1675731232}
   - component: {fileID: 1675731231}
   - component: {fileID: 1675731230}
+  - component: {fileID: 1675731233}
   m_Layer: 3
   m_Name: Ground (9)
   m_TagString: Untagged
@@ -20283,6 +20938,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675731228}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1675731233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675731228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e02def5b347e164c90f323de5293ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 5
+  points: {fileID: 397162104}
 --- !u!1 &1729789298
 GameObject:
   m_ObjectHideFlags: 0
@@ -20296,8 +20965,8 @@ GameObject:
   - component: {fileID: 1729789304}
   - component: {fileID: 1729789303}
   - component: {fileID: 1729789302}
-  - component: {fileID: 1729789301}
   - component: {fileID: 1729789300}
+  - component: {fileID: 1729789306}
   m_Layer: 0
   m_Name: Hurt (20)
   m_TagString: Untagged
@@ -20341,20 +21010,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1729789301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729789298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1729789302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20442,6 +21097,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729789298}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1729789306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729789298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1735590081
 GameObject:
   m_ObjectHideFlags: 0
@@ -20562,8 +21231,8 @@ GameObject:
   - component: {fileID: 1736333584}
   - component: {fileID: 1736333583}
   - component: {fileID: 1736333582}
-  - component: {fileID: 1736333581}
   - component: {fileID: 1736333580}
+  - component: {fileID: 1736333586}
   m_Layer: 0
   m_Name: Hurt (17)
   m_TagString: Untagged
@@ -20607,20 +21276,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1736333581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736333578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1736333582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20708,6 +21363,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736333578}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1736333586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736333578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1740965582
 GameObject:
   m_ObjectHideFlags: 0
@@ -20933,8 +21602,8 @@ GameObject:
   - component: {fileID: 1785367227}
   - component: {fileID: 1785367226}
   - component: {fileID: 1785367225}
-  - component: {fileID: 1785367224}
   - component: {fileID: 1785367223}
+  - component: {fileID: 1785367229}
   m_Layer: 0
   m_Name: Hurt (52)
   m_TagString: Untagged
@@ -20978,20 +21647,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1785367224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785367221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1785367225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21079,6 +21734,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785367221}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1785367229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785367221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1785874430
 GameObject:
   m_ObjectHideFlags: 0
@@ -21235,8 +21904,8 @@ GameObject:
   - component: {fileID: 1814020523}
   - component: {fileID: 1814020522}
   - component: {fileID: 1814020521}
-  - component: {fileID: 1814020520}
   - component: {fileID: 1814020519}
+  - component: {fileID: 1814020525}
   m_Layer: 0
   m_Name: Hurt (44)
   m_TagString: Untagged
@@ -21280,20 +21949,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1814020520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814020517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1814020521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21381,6 +22036,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814020517}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1814020525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814020517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1826172180
 GameObject:
   m_ObjectHideFlags: 0
@@ -21704,8 +22373,8 @@ GameObject:
   - component: {fileID: 1837186405}
   - component: {fileID: 1837186404}
   - component: {fileID: 1837186403}
-  - component: {fileID: 1837186402}
   - component: {fileID: 1837186401}
+  - component: {fileID: 1837186407}
   m_Layer: 0
   m_Name: Hurt (42)
   m_TagString: Untagged
@@ -21749,20 +22418,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1837186402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837186399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1837186403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21850,6 +22505,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837186399}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1837186407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837186399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1837468362
 GameObject:
   m_ObjectHideFlags: 0
@@ -22180,8 +22849,8 @@ GameObject:
   - component: {fileID: 1880526133}
   - component: {fileID: 1880526132}
   - component: {fileID: 1880526131}
-  - component: {fileID: 1880526130}
   - component: {fileID: 1880526129}
+  - component: {fileID: 1880526135}
   m_Layer: 0
   m_Name: Hurt (31)
   m_TagString: Untagged
@@ -22225,20 +22894,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1880526130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880526127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1880526131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22326,6 +22981,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880526127}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1880526135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880526127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1882924801
 GameObject:
   m_ObjectHideFlags: 0
@@ -22685,8 +23354,8 @@ GameObject:
   - component: {fileID: 1939148459}
   - component: {fileID: 1939148458}
   - component: {fileID: 1939148457}
-  - component: {fileID: 1939148456}
   - component: {fileID: 1939148455}
+  - component: {fileID: 1939148461}
   m_Layer: 0
   m_Name: Hurt (24)
   m_TagString: Untagged
@@ -22730,20 +23399,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1939148456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939148453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1939148457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22831,6 +23486,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939148453}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1939148461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939148453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1945737144
 GameObject:
   m_ObjectHideFlags: 0
@@ -22843,6 +23512,7 @@ GameObject:
   - component: {fileID: 1945737148}
   - component: {fileID: 1945737147}
   - component: {fileID: 1945737146}
+  - component: {fileID: 1945737149}
   m_Layer: 3
   m_Name: Ground (7)
   m_TagString: Untagged
@@ -22936,6 +23606,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945737144}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1945737149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945737144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e02def5b347e164c90f323de5293ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 4
+  points: {fileID: 397162104}
 --- !u!1 &1966006531
 GameObject:
   m_ObjectHideFlags: 0
@@ -23368,8 +24052,8 @@ GameObject:
   - component: {fileID: 1992142047}
   - component: {fileID: 1992142046}
   - component: {fileID: 1992142045}
-  - component: {fileID: 1992142044}
   - component: {fileID: 1992142043}
+  - component: {fileID: 1992142049}
   m_Layer: 0
   m_Name: Hurt (2)
   m_TagString: Untagged
@@ -23413,20 +24097,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1992142044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992142041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1992142045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23514,6 +24184,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992142041}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1992142049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992142041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &1996863363
 GameObject:
   m_ObjectHideFlags: 0
@@ -23527,8 +24211,8 @@ GameObject:
   - component: {fileID: 1996863369}
   - component: {fileID: 1996863368}
   - component: {fileID: 1996863367}
-  - component: {fileID: 1996863366}
   - component: {fileID: 1996863365}
+  - component: {fileID: 1996863371}
   m_Layer: 0
   m_Name: Hurt (49)
   m_TagString: Untagged
@@ -23572,20 +24256,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1996863366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996863363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &1996863367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23673,6 +24343,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996863363}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1996863371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996863363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &2030923056
 GameObject:
   m_ObjectHideFlags: 0
@@ -23822,8 +24506,8 @@ GameObject:
   - component: {fileID: 2038080441}
   - component: {fileID: 2038080440}
   - component: {fileID: 2038080439}
-  - component: {fileID: 2038080438}
   - component: {fileID: 2038080437}
+  - component: {fileID: 2038080443}
   m_Layer: 0
   m_Name: Hurt (46)
   m_TagString: Untagged
@@ -23867,20 +24551,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2038080438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038080435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &2038080439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23968,6 +24638,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038080435}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2038080443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038080435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &2055093874
 GameObject:
   m_ObjectHideFlags: 0
@@ -23981,8 +24665,8 @@ GameObject:
   - component: {fileID: 2055093880}
   - component: {fileID: 2055093879}
   - component: {fileID: 2055093878}
-  - component: {fileID: 2055093877}
   - component: {fileID: 2055093876}
+  - component: {fileID: 2055093882}
   m_Layer: 0
   m_Name: Hurt (51)
   m_TagString: Untagged
@@ -24026,20 +24710,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2055093877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055093874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &2055093878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24127,6 +24797,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055093874}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2055093882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055093874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!1 &2061222300
 GameObject:
   m_ObjectHideFlags: 0
@@ -24509,8 +25193,8 @@ GameObject:
   - component: {fileID: 2124723016}
   - component: {fileID: 2124723015}
   - component: {fileID: 2124723014}
-  - component: {fileID: 2124723013}
   - component: {fileID: 2124723012}
+  - component: {fileID: 2124723018}
   m_Layer: 0
   m_Name: Hurt (38)
   m_TagString: Untagged
@@ -24554,20 +25238,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2124723013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124723010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61b4ac09c38ae1543aeb40e7b4fc5671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  oneTime: 1
 --- !u!114 &2124723014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24655,6 +25325,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124723010}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2124723018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124723010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8814d0b9355129c4bbeb11529a8298a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageOverTime: 0
 --- !u!4 &4249966321503547452 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7857347377259054150, guid: 315e5843fa222c64c8b16aa1879d0ca5, type: 3}

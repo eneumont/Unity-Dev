@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Roller.unity
     guid: f55d958e9644c5b4f80d0e50acb3e341
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Ship.unity
     guid: 5095c0453c8c3f24c8b705e536ff0f4f
   m_configObjects: {}

@@ -14,42 +14,42 @@ public class CollisionAction : Action {
 	public void OnTriggerEnter(Collider other) {
 		if (tagName == string.Empty || other.CompareTag(tagName)) {
 			onEnter?.Invoke(other.gameObject);
-			print("hit " + other.name);
+			print(gameObject.name + " hit " + other.name);
 		}
 	}
 
 	public void OnTriggerStay(Collider other) {
 		if (tagName == string.Empty || other.CompareTag(tagName)) {
 			onStay?.Invoke(other.gameObject);
-			print("hit " + other.name);
+			print(gameObject.name + " hit " + other.name);
 		}
 	}
 
 	public void OnTriggerExit(Collider other) {
 		if (tagName == string.Empty || other.CompareTag(tagName)) {
 			onExit?.Invoke(other.gameObject);
-			print("hit " + other.name);
+			print(gameObject.name + " hit " + other.name);
 		}
 	}
 
 	public void OnCollisionEnter(Collision collision) {
 		if (tagName == string.Empty || collision.gameObject.CompareTag(tagName)) {
 			onEnter?.Invoke(collision.gameObject);
-			print("collided with " + collision.gameObject.name);
+			print(gameObject.name + " collided with " + collision.gameObject.name);
 		}
 	}
 
 	public void OnCollisionStay(Collision collision) {
 		if (tagName == string.Empty || collision.gameObject.CompareTag(tagName)) {
 			onStay?.Invoke(collision.gameObject);
-			print("collided with " + collision.gameObject.name);
+			print(gameObject.name + " collided with " + collision.gameObject.name);
 		}
 	}
 
 	public void OnCollisionExit(Collision collision) {
 		if (tagName == string.Empty || collision.gameObject.CompareTag(tagName)) {
 			onExit?.Invoke(collision.gameObject);
-			print("collided with " + collision.gameObject.name);
+			print(gameObject.name + " collided with " + collision.gameObject.name);
 		}
 	}
 	#endregion
